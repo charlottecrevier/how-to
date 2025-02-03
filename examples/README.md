@@ -18,6 +18,9 @@
 - On the pystac-client github repo https://github.com/stac-utils/pystac-client/tree/main/docs/tutorials
 - To install the pystac-client https://github.com/stac-utils/pystac-client
 
+# Suggested reference for stac 
+- On the stac website : https://stacspec.org/en/tutorials/
+
 # Suggested references for COG in python 
 - https://guide.cloudnativegeo.org/
 - COG specification: https://www.cogeo.org/

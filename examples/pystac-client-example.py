@@ -13,7 +13,7 @@ for collection in catalog.get_collections():
 # Define search parameters
 # Define a collection for filtering
 # In this example, we use the mosaic collection of HRDEM tiles
-collections = ['hrdem-mosaic-1m']
+collections = ['hrdem-mosaic-2m']
 # We define a bounding box extent to filter the data
 extent = [-79.28229773059192, 44.31501485755303, -79.1702187573089, 44.3929540402247]
 
@@ -21,7 +21,10 @@ extent = [-79.28229773059192, 44.31501485755303, -79.1702187573089, 44.392954040
 # TODO : add the link to what is available as filter
 search = catalog.search(
 	collections=collections, 
-	bbox=extent) 
+	bbox=extent
+	) 
+
+## Basic example of accessing COG's link for the DTM ##
 
 # Get the list of items for this collection
 items = search.item_collection()	
@@ -30,3 +33,11 @@ items = search.item_collection()
 links=[]
 for item in items:
 	links.append(item.assets['dtm'].href)
+
+
+# Depending on your request, you might want to consider using the 
+# pagination to avoid timeout. Replace line 27-33 with :
+links=[]
+for page in search.pages():
+	for item in page:
+		links.append(item.assets['dtm'].href)

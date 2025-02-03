@@ -1,12 +1,16 @@
-# how-to
-Non-exhaustive good practices and how to's for Cloud Optimized data access
+# Cloud-Optimized Geospatial Data Access
+Non-exhaustive good practices and tutorial for Cloud Optimized data access
 
-Library used are : 
+Library used to discover data : 
 
 - pystac-client 
 - stackstac
+
+Library used to access data : 
+
 - rasterio
 - rioxarray
+- dask
 
 # Suggested reference for QGIS 
 TODO : 
