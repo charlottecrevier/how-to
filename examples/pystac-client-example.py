@@ -34,7 +34,6 @@ links=[]
 for item in items:
 	links.append(item.assets['dtm'].href)
 
-
 # Depending on your request, you might want to consider using the 
 # pagination to avoid timeout. Replace line 27-33 with :
 links=[]

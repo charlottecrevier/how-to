@@ -18,7 +18,7 @@
 - On the pystac-client github repo https://github.com/stac-utils/pystac-client/tree/main/docs/tutorials
 - To install the pystac-client https://github.com/stac-utils/pystac-client
 
-# Suggested reference for stac 
+# Suggested reference for STAC 
 - On the stac website : https://stacspec.org/en/tutorials/
 
 # Suggested references for COG in python 
