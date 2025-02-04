@@ -25,6 +25,7 @@ search = catalog.search(
 	) 
 
 ## Basic example of accessing COG's link for the DTM ##
+# https://pystac-client.readthedocs.io/en/stable/usage.html#itemsearch
 
 # Get the list of items for this collection
 items = search.item_collection()	
