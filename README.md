@@ -9,7 +9,7 @@ for Gouvernment or Canada public COG collections
 ### Library used in examples to access data : 
 
 - stackstac : https://stackstac.readthedocs.io/en/latest/basic.html
-- rasterio
+- rasterio : https://rasterio.readthedocs.io/en/latest/quickstart.html
 - rioxarray
 - dask
 
