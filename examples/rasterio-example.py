@@ -59,6 +59,8 @@ with rasterio.open(links[0]) as src:
 
 # Perfom analysis ...
 
+# TODO : add the wrtting of the final array to a tiff file
+
 
 
 
