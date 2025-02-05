@@ -1,12 +1,17 @@
 # How to use pystac-client to get a list of tile(s) from the hrdem-mosaic-1m
 [Code example](pystac-client-example.py) that:
- - Queries the ccmeo-datacube STAC API with pystac-client to get the available collection;
- - Queries the ccmeo-datacube STAC API with pystac-client with a subset of filter;
- - Accesses the data href for the specific filter.
+ - Queries the ccmeo datacube STAC API with pystac-client to get the available collection;
+ - Queries the ccmeo datacube STAC API with pystac-client with a subset of filter;
+ - Access the data href for the specific filter.
  #TODO : create a list of file returned
 
-# How to use rasterio to read the header of a remote COG 
-# How to use rasterio to read a subset of a remote COG
+# How to use rasterio to read the header and  a subset of a remote COG 
+[Code example](rasterio-example.py) that :
+- Replicate the steps above to access the data href for a specific item/collection; 
+- Read the header of a distant COG;
+- Read a subset of a distant cog based on an area of interest;
+- TODO : Save the subset into as a tif file
+
 # How to use rioxarray to read a subset of a remote COG
 # How to use stackstac to read a subset of a remote COG into a xarray.DataArray
 
