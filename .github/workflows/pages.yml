@@ -1,0 +1,22 @@
+name: Pages
+on:
+  push:
+  branches:
+      - 7-412-add-a-page 
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download source
+        uses: actions/checkout@v4
+      - name: Install Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: |
+          pip install mkdocs>=1.1.2
+          pip install "mkdocstrings[python]"
+          pip install "markdown-exec[ansi]"
+      - name: Build site
+        run: mkdocs build --strict --verbose

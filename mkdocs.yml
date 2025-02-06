@@ -1,0 +1,33 @@
+site_name: Cloud-Optimized Geospatial Data Access 
+site_url: https://charlottecrevier.github.io/how-to/
+repo_url: https://github.com/charlottecrevier/how-to
+
+site_dir: public
+
+# docs_dir: '.'
+
+theme:
+  name: readthedocs
+  # name: material
+
+
+plugins:
+  # - same-dir
+  - mkdocstrings :
+      handlers:
+        # See: https://mkdocstrings.github.io/python/usage/
+        # https://mkdocstrings.github.io/python/usage/configuration/docstrings/#docstring_options
+        # https://mkdocstrings.github.io/griffe/docstrings/#examples_1
+        python:
+          options:
+            docstring_style: numpy
+            merge_init_into_class: True
+            show_if_no_docstring: true
+            # docstring_section_style: table
+            # show_docstring_modules : False
+nav:
+  - Home test : ./README.md
+  # - readme : README.md
+  - Examples : examples/README.md
+  - Test : 
+    - sub-pages : docs/sub_pages.md
