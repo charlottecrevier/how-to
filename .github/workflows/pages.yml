@@ -4,7 +4,7 @@ on:
     branches:
         - 7-412-add-a-page 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Download source
@@ -21,5 +21,11 @@ jobs:
           pip install mkdocs-same-dir
       - name: Build site
         run: mkdocs build --strict --verbose
-      - name: Deploy site
-        run: mkdocs gh-deploy
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        # with:
+        #   # upload entire directory
+        #   path: '.'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
