@@ -25,7 +25,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # upload entire directory
-          path: docs/
+          path: public/
 # Deploy job
   deploy:
     # Add a dependency to the build job
