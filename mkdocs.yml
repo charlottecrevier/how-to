@@ -30,4 +30,4 @@ nav:
   # - readme : README.md
   - Examples : docs/index.md
   - Test : 
-    - sub-pages : docs/sub_pages.md
+    - sub-pages : docs/sub_page.md
