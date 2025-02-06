@@ -1,8 +1,8 @@
 name: Pages
 on:
   push:
-  branches:
-      - 7-412-add-a-page 
+    branches:
+        - 7-412-add-a-page 
 jobs:
   build:
     runs-on: ubuntu-latest
