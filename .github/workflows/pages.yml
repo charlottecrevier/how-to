@@ -21,3 +21,5 @@ jobs:
           pip install mkdocs-same-dir
       - name: Build site
         run: mkdocs build --strict --verbose
+      - name: Deploy site
+        run: mkdocs gh-deploy
