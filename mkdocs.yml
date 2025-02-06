@@ -4,7 +4,7 @@ repo_url: https://github.com/charlottecrevier/how-to
 
 site_dir: public
 
-# docs_dir: '.'
+docs_dir: '.'
 
 theme:
   name: readthedocs
