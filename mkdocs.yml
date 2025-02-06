@@ -4,7 +4,7 @@ repo_url: https://github.com/charlottecrevier/how-to
 
 site_dir: public
 
-docs_dir: '.'
+docs_dir: .
 
 theme:
   name: readthedocs
@@ -12,7 +12,7 @@ theme:
 
 
 plugins:
-  # - same-dir
+  - same-dir
   - mkdocstrings :
       handlers:
         # See: https://mkdocstrings.github.io/python/usage/
