@@ -18,5 +18,6 @@ jobs:
           pip install mkdocs>=1.1.2
           pip install "mkdocstrings[python]"
           pip install "markdown-exec[ansi]"
+          pip install mkdocs-same-dir
       - name: Build site
         run: mkdocs build --strict --verbose

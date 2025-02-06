@@ -26,8 +26,8 @@ plugins:
             # docstring_section_style: table
             # show_docstring_modules : False
 nav:
-  - Home test : ./README.md
+  - Home test : README.md
   # - readme : README.md
-  - Examples : examples/README.md
+  - Examples : /docs/index.md
   - Test : 
-    - sub-pages : docs/sub_pages.md
+    - sub-pages : /docs/sub_pages.md
