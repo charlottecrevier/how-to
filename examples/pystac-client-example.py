@@ -1,4 +1,14 @@
-# Code using pystac-client to search the ccmeo's datacube stac-api
+"""
+# How to use pystac-client to get a list of tile(s) from the hrdem-mosaic-2m
+
+In this example you will learn how to :   
+ - Queries the ccmeo datacube STAC API with pystac-client to get the available collection;    
+ - Queries the ccmeo datacube STAC API with pystac-client with a subset of filter;   
+ - Access the data href for the specific filter.  
+	# TODO : create a list of file returned
+
+"""
+# Import the library needed
 import pystac_client
 
 # Link to ccmeo datacube stac-api
@@ -17,7 +27,6 @@ collections = ['hrdem-mosaic-2m']
 # We define a bounding box extent to filter the data
 extent = [-79.28229773059192, 44.31501485755303, -79.1702187573089, 44.3929540402247]
 
-# Others can be added, this example only filter on collection id
 # TODO : add the link to what is available as filter
 search = catalog.search(
 	collections=collections, 

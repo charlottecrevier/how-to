@@ -13,6 +13,7 @@ theme:
 
 plugins:
   - same-dir
+  - search
   - mkdocstrings :
       handlers:
         # See: https://mkdocstrings.github.io/python/usage/
@@ -25,9 +26,14 @@ plugins:
             show_if_no_docstring: true
             # docstring_section_style: table
             # show_docstring_modules : False
+
+markdown_extensions:
+  - pymdownx.snippets # THIS IS SICK!!!! https://facelessuser.github.io/pymdown-extensions/extensions/snippets/
+  # https://squidfunk.github.io/mkdocs-material/reference/code-blocks/
+
 nav:
-  - Home test : README.md
+  - Home : README.md
   # - readme : README.md
-  - Examples : docs/index.md
-  - Test : 
-    - sub-pages : docs/sub_page.md
+  - Examples : 
+    - Scrape STAC API : docs/pystac-client.md
+    - all : docs/index.md
