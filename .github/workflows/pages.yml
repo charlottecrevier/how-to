@@ -23,9 +23,9 @@ jobs:
         run: mkdocs build --strict --verbose
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
-        # with:
-        #   # upload entire directory
-        #   path: '.'
+        with:
+          # upload entire directory
+          path: '.'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
