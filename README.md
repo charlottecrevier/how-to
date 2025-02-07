@@ -11,7 +11,7 @@ Finally, a paragraph that describes whom the product is useful for.
 -->
 
 ## In this documentation
----
+
 
 ### __Tutorial__
 **Start here**: a hands-on introduction to Example Product for new users
@@ -28,7 +28,7 @@ Finally, a paragraph that describes whom the product is useful for.
 
 
 ## Libraries
----
+
 ### To discover data  
 
 - [pystac-client](https://pystac-client.readthedocs.io/en/stable/usage.html)
@@ -41,7 +41,7 @@ Finally, a paragraph that describes whom the product is useful for.
 - dask
 
 ## Suggested reference for QGIS 
----
+
 ### Ressources for the stac browser plugin in QGIS
 - <https://stacspec.org/en/tutorials/2-intro-to-stac-api-browser-qgis-plugin/>
 - <https://qgis.org/project/visual-changelogs/visualchangelog340/#feature-stac-integration>
