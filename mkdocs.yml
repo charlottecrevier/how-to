@@ -34,6 +34,9 @@ markdown_extensions:
 nav:
   - Home : README.md
   # - readme : README.md
-  - Examples : 
+  - How-to guides : 
     - Scrape STAC API : docs/pystac-client.md
-    - all : docs/index.md
+    # - Interact with COGs
+    - Other : docs/index.md
+  - Reference : docs/reference.md
+  # - FAQ

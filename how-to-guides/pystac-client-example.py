@@ -36,17 +36,9 @@ search = catalog.search(
 ## Basic example of accessing COG's link for the DTM ##
 # https://pystac-client.readthedocs.io/en/stable/usage.html#itemsearch
 
-# Get the list of items for this collection
-items = search.item_collection()	
-
-# List all the link to the cogs for a specific asset
+# Use the pagination to improve efficiency
 links=[]
-for item in items:
-	links.append(item.assets['dtm'].href)
-
-# Depending on your request, you might want to consider using the 
-# pagination to avoid timeout. Replace line 27-33 with :
-links=[]
+# Iterate over each returned page and get the dtm COG link
 for page in search.pages():
 	for item in page:
 		links.append(item.assets['dtm'].href)
