@@ -12,13 +12,21 @@
 # Suggested references for COG in python 
 - <https://guide.cloudnativegeo.org/>
 - COG specification: <https://www.cogeo.org/>
-- <https://stackstac.readthedocs.io/en/latest/>
-- On the rasterio documentation website 
+- stackstac : <https://stackstac.readthedocs.io/en/latest/>
+- On the rasterio documentation website :
     - <https://rasterio.readthedocs.io/en/stable/quickstart.html> 
     - <https://rasterio.readthedocs.io/en/stable/topics/reading.html>
+- GDAL : <https://gdal.org/en/stable/drivers/raster/cog.html#raster-cog>
 
-## Suggested reference for QGIS 
+# Additional python library of interest 
+- rioxarray : 
+    - <https://corteva.github.io/rioxarray/stable/>
+    - <https://corteva.github.io/rioxarray/stable/getting_started/getting_started.html>
+    - <https://corteva.github.io/rioxarray/stable/examples/examples.html>
+- xarray : <https://xarray.dev/>
+- dask : <https://docs.dask.org/en/stable/>
 
+# Suggested reference for QGIS 
 ### Ressources for the stac browser plugin in QGIS
 - <https://stacspec.org/en/tutorials/2-intro-to-stac-api-browser-qgis-plugin/>
 - <https://qgis.org/project/visual-changelogs/visualchangelog340/#feature-stac-integration>
