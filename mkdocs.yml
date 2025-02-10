@@ -38,5 +38,5 @@ nav:
     - Scrape STAC API : docs/pystac-client.md
     # - Interact with COGs
     - Other : docs/index.md
-  - Reference : docs/reference.md
+  - References : docs/reference.md
   # - FAQ

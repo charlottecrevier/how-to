@@ -40,15 +40,6 @@ Finally, a paragraph that describes whom the product is useful for.
 - rioxarray
 - dask
 
-## Suggested reference for QGIS 
-
-### Ressources for the stac browser plugin in QGIS
-- <https://stacspec.org/en/tutorials/2-intro-to-stac-api-browser-qgis-plugin/>
-- <https://qgis.org/project/visual-changelogs/visualchangelog340/#feature-stac-integration>
-
-### Ressources for data streaming from QGIS
-- <https://cogeo.org/qgis-tutorial.html>
-
 ## Link to CCMEO COG collections 
 - STAC API : <https://datacube.services.geo.ca/stac/api/>  
 - STAC API via STAC-Browser : <https://radiantearth.github.io/stac-browser/#/external/datacube.services.geo.ca/stac/api/?.language=en>
