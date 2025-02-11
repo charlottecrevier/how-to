@@ -9,7 +9,7 @@ A paragraph of one to three short sentences, that describe what the product does
 A third paragraph of similar length, this time explaining what need the product meets.
 Finally, a paragraph that describes whom the product is useful for.
 -->
-
+<!--- 
 ## In this documentation
 
 
@@ -25,7 +25,36 @@ Finally, a paragraph that describes whom the product is useful for.
 
 ### __Explanation__
 **Discussion and clarification** of key topics
+-->
 
+## In this documentation
+<div class="grid cards" markdown>
+
+-   #### __Tutorial__
+
+    ---
+
+    **Start here**: a hands-on introduction to Example Product for new users
+
+
+-   ####__How-to guides__
+
+    ---
+
+    **Step-by-step guides** covering key operations and common tasks
+    [:octicons-arrow-right-24: docs/pystac-client.md](docs/pystac-client.md)
+
+-   __Reference__
+
+    ---
+
+    **Technical information** - specifications, APIs, architecture
+
+-   __Explanation__  
+
+    ---
+    **Discussion and clarification** of key topics
+</div>
 
 ## Libraries
 

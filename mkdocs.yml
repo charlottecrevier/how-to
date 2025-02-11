@@ -1,6 +1,7 @@
 site_name: Cloud-Optimized Geospatial Data Access 
 site_url: https://charlottecrevier.github.io/how-to/
 repo_url: https://github.com/charlottecrevier/how-to
+# repo_name: charlottecrevier/how-to
 
 site_dir: public
 
@@ -9,7 +10,17 @@ docs_dir: .
 theme:
   # name: readthedocs
   name: material
+  language: en
+  features:
+  #   - navigation.tabs # Ne fonctionnne pas...
+    # - navigation.indexes
+    # - navigation.top # Ne marche pas
+    # - navigation.footer
 
+# extra: 
+#   social: # Ne marche pas
+#     - icon: fontawesome/brands/github
+#       link: https://github.com/charlottecrevier/how-to
 
 plugins:
   - same-dir
@@ -30,6 +41,8 @@ plugins:
 markdown_extensions:
   - pymdownx.snippets # THIS IS SICK!!!! https://facelessuser.github.io/pymdown-extensions/extensions/snippets/
   # https://squidfunk.github.io/mkdocs-material/reference/code-blocks/
+  - attr_list
+  - md_in_html
 
 nav:
   - Home : README.md
