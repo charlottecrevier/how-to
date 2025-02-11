@@ -7,8 +7,8 @@ site_dir: public
 docs_dir: .
 
 theme:
-  name: readthedocs
-  # name: material
+  # name: readthedocs
+  name: material
 
 
 plugins:
