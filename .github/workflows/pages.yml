@@ -1,7 +1,11 @@
 name: Pages
 on:
-  page_build
-  
+  pull_request:
+    types:
+      - [closed]
+    branches:
+      - main
+
 jobs:
   build:
     runs-on: ubuntu-latest
