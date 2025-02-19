@@ -42,7 +42,7 @@ Finally, a paragraph that describes whom the product is useful for.
     ---
 
     **Step-by-step guides** covering key operations and common tasks
-    [:octicons-arrow-right-24: docs/pystac-client.md](docs/pystac-client.md)
+    :octicons-arrow-right-24: [docs/pystac-client.md](docs/pystac-client.md)
 
 -   __Reference__
 
