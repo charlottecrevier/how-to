@@ -1,7 +1,12 @@
 name: Pages
 on:
-  branches:
-    - test-actions
+  pull_request:
+    types:
+      - closed
+    branches: [main]
+  push:
+    branches:
+      - test-actions
 
 jobs:
   build:
