@@ -7,9 +7,9 @@ In this example you will learn how to :
 - Access the data href for the specific filter.  
 
 !!! info
-
-	This specific example uses the collection hrdem-mosaic-2m from CCMEO's datacube
+    This specific example uses the collection hrdem-mosaic-2m from CCMEO's datacube
 """
+
 
 # Import the library needed
 import pystac_client
