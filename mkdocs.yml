@@ -54,7 +54,7 @@ markdown_extensions:
   - pymdownx.emoji
 
 nav:
-  - Home : README.md
+  - Home : docs/home.md
   # - readme : README.md
   - How-to guides : 
     - Interacting with CCMEO STAC API : docs/pystac-client.md
