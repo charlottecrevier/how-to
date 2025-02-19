@@ -5,8 +5,7 @@ on:
       - closed
     branches: [main]
   push:
-    branches:
-      - test-actions
+    branches: [main]
 
 jobs:
   build:
