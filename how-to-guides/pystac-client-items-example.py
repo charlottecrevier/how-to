@@ -1,13 +1,16 @@
 """
-# Get a list of items using pystac-client 
-This specific example uses the collection hrdem-mosaic-2m from CCMEO's datacube
+## Get a list of items
 
 In this example you will learn how to :   
 
 - Queries the ccmeo datacube STAC API with pystac-client with a subset of filter;   
 - Access the data href for the specific filter.  
 
+!!! info
+
+	This specific example uses the collection hrdem-mosaic-2m from CCMEO's datacube
 """
+
 # Import the library needed
 import pystac_client
 

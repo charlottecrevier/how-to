@@ -1,5 +1,5 @@
 """
-# Get a list of collections using pystac-client 
+## Get a list of collections
 
 In this example you will learn how to :   
 

@@ -1,6 +1,8 @@
 # Interacting with CCMEO STAC API
-This section present example on how to use python libraries to discover the available
+This section present examples on how to use python libraries to discover the available
 collection from the CCMEO datacube STAC API. 
+
+## Using pystac-client
 
 The following code examples uses the pystac-client library. To install pystac client see [pystac-client]
 ``` sh
@@ -19,7 +21,7 @@ For certificate error while accessing the STAC API, see [using custom certificat
 
 
 ``` py 
---8<-- "how-to-guides/pystac-client-collections-example.py:11"
+--8<-- "how-to-guides/pystac-client-collections-example.py:8"
 ```
 <!-- END: Get a list of collections using pystac-client -->
 
@@ -32,7 +34,7 @@ For certificate error while accessing the STAC API, see [using custom certificat
 
 
 ``` py 
---8<-- "how-to-guides/pystac-client-items-example.py:11"
+--8<-- "how-to-guides/pystac-client-items-example.py:14"
 ```
 <!-- END: Get a list of items using pystac-client -->
 
