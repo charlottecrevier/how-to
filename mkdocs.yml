@@ -54,8 +54,7 @@ nav:
   - Home : README.md
   # - readme : README.md
   - How-to guides : 
-    - Scrape STAC API Option 1 : docs/pystac-client.md
-    - Scrape STAC API Option 2 : docs/pystac-client-option2.md
+    - Scrape STAC API : docs/pystac-client.md
     # - Interact with COGs
     - Other : docs/index.md
   - References : docs/reference.md
