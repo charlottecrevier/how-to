@@ -1,4 +1,3 @@
 # python 3.10
 # To install pystac client see https://github.com/stac-utils/pystac-client
-# pip install pystac-client
-pystac-client
+pip install pystac-client
