@@ -1,9 +1,7 @@
 name: Pages
 on:
-  pull_request:
-    types: [closed]
-    branches:
-      - main
+  branches:
+    - test-actions
 
 jobs:
   build:
