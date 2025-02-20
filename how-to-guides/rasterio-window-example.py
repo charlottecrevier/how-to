@@ -1,13 +1,15 @@
 """
+## Read a subset of a distant COG
+
 In this code you will : 
+
 - Scrape the STAC using pystac-client to get link to a COG
-- Read header metadata from a distant COG file
 - Read a subset of a distant COG based on an AOI
 
-Ressources : 
-# https://rasterio.readthedocs.io/en/latest/quickstart.html
+!!! info
+    This specific example uses the collection mrdem-30 from CCMEO's datacube
 """
-
+# --8<-- [start:code]
 import pystac_client
 import rasterio 
 from rasterio.windows import from_bounds
@@ -19,10 +21,8 @@ from shapely.geometry import box, shape
 bbox=[-75.8860,45.3157,-75.5261,45.5142]
 bbox_crs = "EPSG:4326"
 
-# Get the link to the mrdem-30 dtm cog 
 # Link to ccmeo datacube stac-api
 stac_root = "https://datacube.services.geo.ca/stac/api"
-# Initialiser le client STAC
 catalog = pystac_client.Client.open(stac_root)
 
 search = catalog.search(
@@ -32,20 +32,12 @@ search = catalog.search(
 
 # Get the link to the data asset for mrdem-30 dtm
 links = []
-for item in search.items():
-    links.append(item.get_assets(role='data')['dtm'].href)
+for page in search.pages():
+	for item in page:
+		links.append(item.assets['dtm'].href)
 
 print(links)
 # >> ['https://datacube-prod-data-public.s3.amazonaws.com/store/elevation/mrdem/mrdem-30/mrdem-30-dtm.tif']
-
-# REad the header of a distant COG 
-with rasterio.open(links[0]) as src:
-    # Read the header of a COG
-    print(src.tags())
-    # >> {'AREA_OR_POINT': 'Area', 'TIFFTAG_DATETIME': '2024:06:13 12:00:00'}
-    print(src.profile)
-    # >> {'driver': 'GTiff', 'dtype': 'float32', 'nodata': -32767.0, 'width': 183687, 'height': 159655, 'count': 1, 'crs': CRS.from_epsg(3979), 'transform': Affine(30.0, 0.0, -2454000.0,
-    #    0.0, -30.0, 3887400.0), 'blockxsize': 512, 'blockysize': 512, 'tiled': True, 'compress': 'lzw', 'interleave': 'band'}
 
 # Read the COG for AOI
 with rasterio.open(links[0]) as src:
@@ -60,7 +52,7 @@ with rasterio.open(links[0]) as src:
 # Perfom analysis ...
 
 # TODO : add the wrtting of the final array to a tiff file
-
+# --8<-- [end:code]
 
 
 

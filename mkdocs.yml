@@ -5,13 +5,15 @@ repo_url: https://github.com/charlottecrevier/how-to
 
 site_dir: public
 
-docs_dir: .
+# docs_dir: .
 
 theme:
   # name: readthedocs
   name: material
   language: en
   features:
+    - content.code.copy
+    - search.highlight
   #   - navigation.tabs # Ne fonctionnne pas...
     # - navigation.indexes
     # - navigation.top # Ne marche pas
@@ -23,7 +25,7 @@ theme:
 #       link: https://github.com/charlottecrevier/how-to
 
 plugins:
-  - same-dir
+  # - same-dir
   - search
   - mkdocstrings :
       handlers:
@@ -43,22 +45,23 @@ markdown_extensions:
   # https://squidfunk.github.io/mkdocs-material/reference/code-blocks/
   - attr_list
   - md_in_html
-  # - pymdownx.highlight:
-  #     anchor_linenums: true
-  #     line_spans: __span
-  #     pygments_lang_class: true
-  # - pymdownx.inlinehilite
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
   - pymdownx.superfences # For the colors in the python codeblocks
   # - pymdownx.details
   - admonition
   - pymdownx.emoji
 
 nav:
-  - Home : docs/home.md
+  - Home : index.md
   # - readme : README.md
   - How-to guides : 
-    - Interacting with CCMEO STAC API : docs/pystac-client.md
+    - Interacting with CCMEO STAC API : pystac-client.md
     # - Interact with COGs
-    - Other : docs/index.md
-  - References : docs/reference.md
+    - Accessing COG data : example-cogs.md
+    # - Other : docs/index.md
+  - References : reference.md
   # - FAQ

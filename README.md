@@ -2,7 +2,7 @@
 Non-exhaustive good practices and tutorials for Cloud Optimized data access
 for Gouvernment of Canada public COG collections. 
 
-Main documentation pages under the github pages repo site. 
+Main documentation is under the github pages repo site. 
 
 ## Link to CCMEO COG collections 
 STAC API : <https://datacube.services.geo.ca/stac/api/>  

@@ -4,7 +4,7 @@ collection from the CCMEO datacube STAC API.
 
 ## Using pystac-client
 
-The following code examples uses the pystac-client library. To install pystac client see [pystac-client]
+The following code examples uses the pystac-client library. To install pystac-client see [pystac-client]
 ``` sh
 --8<-- "how-to-guides/pystac-client-requirements.txt:3:3"
 ```
@@ -20,8 +20,8 @@ For certificate error while accessing the STAC API, see [using custom certificat
         show_root_toc_entry: false # To remove the name of the file in the TOC
 
 
-``` py 
---8<-- "how-to-guides/pystac-client-collections-example.py:8"
+``` py linenums="1"
+--8<-- "how-to-guides/pystac-client-collections-example.py:code"
 ```
 <!-- END: Get a list of collections using pystac-client -->
 
@@ -33,8 +33,8 @@ For certificate error while accessing the STAC API, see [using custom certificat
         show_root_toc_entry: false # To remove the name of the file in the TOC
 
 
-``` py 
---8<-- "how-to-guides/pystac-client-items-example.py:14"
+``` py linenums="1"
+--8<-- "how-to-guides/pystac-client-items-example.py:code"
 ```
 <!-- END: Get a list of items using pystac-client -->
 

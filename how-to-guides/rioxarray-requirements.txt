@@ -1,0 +1,4 @@
+pip install rioxarray
+# Dask is needed to be able to use the rioxarray chunks 
+# https://docs.dask.org/en/stable/install.html
+pip install "dask[complete]" 
