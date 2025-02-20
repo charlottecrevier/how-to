@@ -21,7 +21,7 @@ For certificate error while accessing the STAC API, see [using custom certificat
 
 
 ``` py linenums="1"
---8<-- "how-to-guides/pystac-client-collections-example.py:8"
+--8<-- "how-to-guides/pystac-client-collections-example.py:code"
 ```
 <!-- END: Get a list of collections using pystac-client -->
 
@@ -34,7 +34,7 @@ For certificate error while accessing the STAC API, see [using custom certificat
 
 
 ``` py linenums="1"
---8<-- "how-to-guides/pystac-client-items-example.py:14"
+--8<-- "how-to-guides/pystac-client-items-example.py:code"
 ```
 <!-- END: Get a list of items using pystac-client -->
 

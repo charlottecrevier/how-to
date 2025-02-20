@@ -7,12 +7,9 @@ In this code you will :
 - Read header metadata from a distant COG file
 
 !!! info
-    For more details on how to discover data through the STAC API, see the other section
-
-
-!!! info
     This specific example uses the collection mrdem-30 from CCMEO's datacube
 """
+# --8<-- [start:code]
 import pystac_client
 import rasterio 
 
@@ -46,7 +43,7 @@ with rasterio.open(links[0]) as src:
     print(src.profile)
     # >> {'driver': 'GTiff', 'dtype': 'float32', 'nodata': -32767.0, 'width': 183687, 'height': 159655, 'count': 1, 'crs': CRS.from_epsg(3979), 'transform': Affine(30.0, 0.0, -2454000.0,
     #    0.0, -30.0, 3887400.0), 'blockxsize': 512, 'blockysize': 512, 'tiled': True, 'compress': 'lzw', 'interleave': 'band'}
-
+# --8<-- [end:code]
 
 
 

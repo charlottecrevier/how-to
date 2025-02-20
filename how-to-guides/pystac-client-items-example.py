@@ -9,8 +9,7 @@ In this example you will learn how to :
 !!! info
     This specific example uses the collection hrdem-mosaic-2m from CCMEO's datacube
 """
-
-
+# --8<-- [start:code]
 # Import the library needed
 import pystac_client
 
@@ -37,3 +36,4 @@ links=[]
 for page in search.pages():
 	for item in page:
 		links.append(item.assets['dtm'].href)
+# --8<-- [end:code]

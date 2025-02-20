@@ -9,7 +9,7 @@ In this code you will :
 !!! info
     This specific example uses the collection mrdem-30 from CCMEO's datacube
 """
-
+# --8<-- [start:code]
 import pystac_client
 import rasterio 
 from rasterio.windows import from_bounds
@@ -52,7 +52,7 @@ with rasterio.open(links[0]) as src:
 # Perfom analysis ...
 
 # TODO : add the wrtting of the final array to a tiff file
-
+# --8<-- [end:code]
 
 
 

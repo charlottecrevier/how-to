@@ -12,6 +12,8 @@ theme:
   name: material
   language: en
   features:
+    - content.code.copy
+    - search.highlight
   #   - navigation.tabs # Ne fonctionnne pas...
     # - navigation.indexes
     # - navigation.top # Ne marche pas
