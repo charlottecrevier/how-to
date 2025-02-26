@@ -14,9 +14,12 @@ theme:
   features:
     - content.code.copy
     - search.highlight
+    - navigation.path # Ne semble pas fonctionner...
+    - navigation.top
+    - navigation.footer
+    # - footer.prev_next # Pas certaine si ca marche
   #   - navigation.tabs # Ne fonctionnne pas...
     # - navigation.indexes
-    # - navigation.top # Ne marche pas
     # - navigation.footer
 
 # extra: 

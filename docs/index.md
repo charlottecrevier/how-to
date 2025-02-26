@@ -15,14 +15,14 @@ Finally, a paragraph that describes whom the product is useful for.
 -->
 
 
-## In this documentation
+## In this site...
 <div class="grid cards" markdown>
 
--   __Tutorial__
+<!-- -   __Tutorial__
 
     ---
 
-    **Start here**: a hands-on introduction to Example Product for new users
+    **Start here**: a hands-on introduction to Example Product for new users -->
     
 
 
@@ -34,18 +34,18 @@ Finally, a paragraph that describes whom the product is useful for.
     
     :arrow_right: [how-to guides](pystac-client.md)
 
--   __Reference__
+-   __References__
 
     ---
 
-    **Technical information** - links, reference  
+    Usefull references to **external ressources**  
 
     :arrow_right: [Reference](reference.md)
 
--   __Explanation__  
+<!-- -   __Explanation__  
 
     ---
-    **Discussion and clarification** of key topics
+    **Discussion and clarification** of key topics -->
 </div>
 
 ## Libraries
