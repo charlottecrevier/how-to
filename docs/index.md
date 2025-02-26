@@ -30,7 +30,7 @@ Finally, a paragraph that describes whom the product is useful for.
 
     ---
 
-    **Step-by-step guides** covering key operations and common tasks
+    **Code examples** covering key operations and common tasks
     
     :arrow_right: [how-to guides](pystac-client.md)
 
@@ -66,3 +66,6 @@ Non-exhaustive list of libraries used in the examples.
 [rasterio]: https://rasterio.readthedocs.io/en/latest/quickstart.html
 [stackstac]: https://stackstac.readthedocs.io/en/latest/basic.html
 [rioxarray]: https://corteva.github.io/rioxarray/stable/
+*[COG]: Cloud Optimized GeoTIFF
+*[CCMEO]: Canadian Center for Mapping and Earth Observation, Natural Resources Canada
+*[STAC]: Spatio-Temporal Asset Catalog

@@ -7,7 +7,7 @@ In this code you will :
 - Read header metadata from a distant COG file
 
 !!! info
-    This specific example uses the collection mrdem-30 from CCMEO's datacube
+    This specific example uses the collection **mrdem-30** from CCMEO's datacube
 """
 # --8<-- [start:code]
 import pystac_client
@@ -31,9 +31,6 @@ links = []
 for page in search.pages():
 	for item in page:
 		links.append(item.assets['dtm'].href)
-
-print(links)
-# >> ['https://datacube-prod-data-public.s3.amazonaws.com/store/elevation/mrdem/mrdem-30/mrdem-30-dtm.tif']
 
 # Read the header of a distant COG 
 with rasterio.open(links[0]) as src:
