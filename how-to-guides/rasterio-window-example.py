@@ -36,10 +36,7 @@ for page in search.pages():
 	for item in page:
 		links.append(item.assets['dtm'].href)
 
-print(links)
-# >> ['https://datacube-prod-data-public.s3.amazonaws.com/store/elevation/mrdem/mrdem-30/mrdem-30-dtm.tif']
-
-# Read the COG for AOI
+# Read AOI from the first COG
 with rasterio.open(links[0]) as src:
     # Transform bbox to src EPSG
     transformed_bbox = shape(transform_geom(src.crs, bbox_crs, box(*bbox))).bounds
@@ -48,10 +45,21 @@ with rasterio.open(links[0]) as src:
                        transformed_bbox[2], transformed_bbox[3], src.transform)
     # Read value from file
     rst = src.read(1, window=window)
+    
+    # Copy and update the source metadata to be able to write it to the output tiff
+    metadata = src.meta.copy()
+    metadata.update({
+        'height': window.height,
+        'width': window.width,
+        'transform': rasterio.windows.transform(window, src.transform)
+    }) 
 
 # Perfom analysis ...
 
-# TODO : add the wrtting of the final array to a tiff file
+# Write the output array to a tiff file
+output_tiff = r"path/to/output.tif"
+with rasterio.open(output_tiff, 'w', **metadata) as dst:
+    dst.write(rst)
 # --8<-- [end:code]
 
 
