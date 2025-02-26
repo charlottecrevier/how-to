@@ -4,10 +4,16 @@
 In this code you will : 
 
 - Scrape the STAC using pystac-client to get link to a COG
-- Read a subset of a distant COG based on an AOI
+- Read a subset of a distant COG based on an AOI with the window functionnality
 
 !!! info
     This specific example uses the collection mrdem-30 from CCMEO's datacube
+
+!!! info
+    COG'S file containe internal tiling that can be leverage by iterating on
+    rasterio.DatasetReader.block_windows() reading 
+    Example : https://rasterio.readthedocs.io/en/stable/topics/windowed-rw.html#blocks
+    API definition: https://rasterio.readthedocs.io/en/stable/topics/windowed-rw.html#blocks
 """
 # --8<-- [start:code]
 import pystac_client

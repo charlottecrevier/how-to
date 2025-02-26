@@ -33,9 +33,10 @@ For more details on the rasterio library, see the [rasterio quickstart] document
         members: no
         show_root_toc_entry: false # To remove the name of the file in the TOC
 
-``` py linenums="1" hl_lines="30-42"
+``` py linenums="1" hl_lines="30-38"
 --8<-- "how-to-guides/rasterio-window-example.py:code"
 ```
+<!-- END: Read a subset of a cog using rasterio -->
 
 [rasterio installation]: https://rasterio.readthedocs.io/en/stable/installation.html
 [rasterio quickstart]: https://rasterio.readthedocs.io/en/latest/quickstart.html
