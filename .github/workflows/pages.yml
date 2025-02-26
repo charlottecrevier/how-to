@@ -10,7 +10,7 @@ jobs:
       - name: Download source
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          fetch-depth: '0'
       - name: Install Python
         uses: actions/setup-python@v5
         with:
