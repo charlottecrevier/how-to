@@ -85,3 +85,6 @@ GDAL
 [STAC API Browser Plugin]: https://stacspec.org/en/tutorials/2-intro-to-stac-api-browser-qgis-plugin/
 [CHANGELOG]: https://qgis.org/project/visual-changelogs/visualchangelog340/#feature-stac-integration
 [Tutorial]: https://cogeo.org/qgis-tutorial.html
+
+*[COG]: Cloud Optimized GeoTIFF
+*[STAC]: Spatio-Temporal Asset Catalog

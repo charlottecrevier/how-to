@@ -3,6 +3,7 @@ Non-exhaustive good practices and tutorials for Cloud Optimized data access
 for Gouvernment of Canada public COG collections. 
 
 Main documentation is under the github pages repo site. 
+[![Built with Material for MkDocs](https://img.shields.io/badge/Material_for_MkDocs-526CFE?style=for-the-badge&logo=MaterialForMkDocs&logoColor=white)](https://squidfunk.github.io/mkdocs-material/)
 
 ## Link to CCMEO COG collections 
 STAC API : <https://datacube.services.geo.ca/stac/api/>  
@@ -21,8 +22,6 @@ Non-exhaustive list of libraries used in the examples.
 - [stackstac]
 - [rioxarray]
 - dask
-
-[![Built with Material for MkDocs](https://img.shields.io/badge/Material_for_MkDocs-526CFE?style=for-the-badge&logo=MaterialForMkDocs&logoColor=white)](https://squidfunk.github.io/mkdocs-material/)
 
 [pystac-client]: https://pystac-client.readthedocs.io/en/stable/usage.html
 [rasterio]: https://rasterio.readthedocs.io/en/latest/quickstart.html

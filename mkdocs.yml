@@ -1,7 +1,7 @@
 site_name: Cloud-Optimized Geospatial Data Access 
 site_url: https://charlottecrevier.github.io/how-to/
 repo_url: https://github.com/charlottecrevier/how-to
-# repo_name: charlottecrevier/how-to
+repo_name: charlottecrevier/how-to # To be changed when will be on NRCan
 
 site_dir: public
 
@@ -17,7 +17,8 @@ theme:
     - navigation.path # Ne semble pas fonctionner...
     - navigation.top
     - navigation.footer
-    # - footer.prev_next # Pas certaine si ca marche
+    - content.tooltips
+    # - content.action.view # To see the source page, we don't want that
   #   - navigation.tabs # Ne fonctionnne pas...
     # - navigation.indexes
     # - navigation.footer
@@ -42,6 +43,11 @@ plugins:
             show_if_no_docstring: true
             # docstring_section_style: table
             # show_docstring_modules : False
+  - git-revision-date-localized:
+      enable_creation_date: true
+  - git-committers:
+      repository: charlottecrevier/how-to
+      branch: main
 
 markdown_extensions:
   - pymdownx.snippets # THIS IS SICK!!!! https://facelessuser.github.io/pymdown-extensions/extensions/snippets/
@@ -57,6 +63,10 @@ markdown_extensions:
   # - pymdownx.details
   - admonition
   - pymdownx.emoji
+  - abbr
+  - toc:
+      permalink: true
+  # - footnotes
 
 nav:
   - Home : index.md
