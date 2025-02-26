@@ -22,6 +22,8 @@ Non-exhaustive list of libraries used in the examples.
 - [rioxarray]
 - dask
 
+[![Built with Material for MkDocs](https://img.shields.io/badge/Material_for_MkDocs-526CFE?style=for-the-badge&logo=MaterialForMkDocs&logoColor=white)](https://squidfunk.github.io/mkdocs-material/)
+
 [pystac-client]: https://pystac-client.readthedocs.io/en/stable/usage.html
 [rasterio]: https://rasterio.readthedocs.io/en/latest/quickstart.html
 [stackstac]: https://stackstac.readthedocs.io/en/latest/basic.html
