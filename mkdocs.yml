@@ -48,6 +48,7 @@ plugins:
   - git-committers:
       repository: charlottecrevier/how-to
       branch: main
+      token: !ENV MKDOCS_GIT_COMMITTERS_APIKEY
 
 markdown_extensions:
   - pymdownx.snippets # THIS IS SICK!!!! https://facelessuser.github.io/pymdown-extensions/extensions/snippets/
