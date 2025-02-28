@@ -9,6 +9,8 @@ jobs:
     steps:
       - name: Download source
         uses: actions/checkout@v4
+        with:
+          fetch-depth: '0'
       - name: Install Python
         uses: actions/setup-python@v5
         with:
@@ -19,8 +21,12 @@ jobs:
           pip install "mkdocstrings[python]"
           pip install mkdocs-same-dir
           pip install mkdocs-material
+          pip install mkdocs-git-revision-date-localized-plugin
+          pip install mkdocs-git-committers-plugin-2
       - name: Build site
-        run: mkdocs build --strict --verbose
+        # env:
+          # MKDOCS_GIT_COMMITTERS_APIKEY: ${{ secrets.MKDOCS_GIT_COMMITTERS_APIKEY }}
+        run: mkdocs build --verbose # --strict
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

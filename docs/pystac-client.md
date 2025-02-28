@@ -42,5 +42,7 @@ For certificate error while accessing the STAC API, see [using custom certificat
 [items search]: https://pystac-client.readthedocs.io/en/stable/usage.html#itemsearch
 [using custom certificat]: <https://pystac-client.readthedocs.io/en/stable/usage.html#using-custom-certificates>
 
+*[COG]: Cloud Optimized GeoTIFF
+*[STAC]: Spatio-Temporal Asset Catalog
 
 

@@ -15,14 +15,14 @@ Finally, a paragraph that describes whom the product is useful for.
 -->
 
 
-## In this documentation
+## In this site...
 <div class="grid cards" markdown>
 
--   __Tutorial__
+<!-- -   __Tutorial__
 
     ---
 
-    **Start here**: a hands-on introduction to Example Product for new users
+    **Start here**: a hands-on introduction to Example Product for new users -->
     
 
 
@@ -30,22 +30,22 @@ Finally, a paragraph that describes whom the product is useful for.
 
     ---
 
-    **Step-by-step guides** covering key operations and common tasks
+    **Code examples** covering key operations and common tasks
     
     :arrow_right: [how-to guides](pystac-client.md)
 
--   __Reference__
+-   __References__
 
     ---
 
-    **Technical information** - links, reference  
+    Usefull references to **external ressources**  
 
     :arrow_right: [Reference](reference.md)
 
--   __Explanation__  
+<!-- -   __Explanation__  
 
     ---
-    **Discussion and clarification** of key topics
+    **Discussion and clarification** of key topics -->
 </div>
 
 ## Libraries
@@ -66,3 +66,6 @@ Non-exhaustive list of libraries used in the examples.
 [rasterio]: https://rasterio.readthedocs.io/en/latest/quickstart.html
 [stackstac]: https://stackstac.readthedocs.io/en/latest/basic.html
 [rioxarray]: https://corteva.github.io/rioxarray/stable/
+*[COG]: Cloud Optimized GeoTIFF
+*[CCMEO]: Canadian Center for Mapping and Earth Observation, Natural Resources Canada
+*[STAC]: Spatio-Temporal Asset Catalog
