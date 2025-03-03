@@ -1,0 +1,4 @@
+# python 3.13
+pip install pathlib
+pip install pystac-client
+pip install gdal
