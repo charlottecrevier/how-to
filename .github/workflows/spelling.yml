@@ -16,8 +16,8 @@ jobs:
         source_files: "**/*.py"
         task_name: python_comments
         output_file: spellcheck-output.txt
-    - uses: actions/upload-artifact@v3
-      if: '!cancelled()' # Do not upload artifact if job was cancelled
-      with:
-        name: Spellcheck Output
-        path: temp/spellcheck-output.txt
+    # - uses: actions/upload-artifact@v3
+    #   if: '!cancelled()' # Do not upload artifact if job was cancelled
+    #   with:
+    #     name: Spellcheck Output
+    #     path: temp/spellcheck-output.txt
