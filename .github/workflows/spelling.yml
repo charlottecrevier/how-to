@@ -1,7 +1,7 @@
 name: Spellcheck
 on:
-  push:
-    branches: [29-41-spellcheck-in-ci]
+  push
+    # branches: [29-41-spellcheck-in-ci]
 
 jobs:
   build:
@@ -10,16 +10,16 @@ jobs:
     steps:
     # The checkout step
     - uses: actions/checkout@v3
-    - uses: rojopolis/spellcheck-github-actions@0.47.0
-      name: Spellcheck_python
+    - uses: rojopolis/spellcheck-github-actions@0
+      name: Spellcheck
       with:
         # source_files: "**/*.py"
         config_path: .github/workflows/config/.spellcheck.yml
         # task_name: python_comments
         output_file: spellcheck-output.txt
       continue-on-error: true
-    - name: List files
-      run: ls -alh
+    # - name: List files
+    #   run: ls -alh
     - uses: actions/upload-artifact@v4
       name: Create artifact
       if: '!cancelled()' # Do not upload artifact if job was cancelled
