@@ -15,7 +15,7 @@ matrix:
       comments: true
   dictionary:
     wordlists:
-    - config/.wordlist-custom.txt
+    - .github/workflows/config/.wordlist-custom.txt
     encoding: utf-8
 
 - name: markdown
