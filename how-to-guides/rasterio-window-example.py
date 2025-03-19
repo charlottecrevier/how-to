@@ -4,7 +4,7 @@
 In this code you will : 
 
 - Scrape the STAC using pystac-client to get link to a COG
-- Read a subset of a distant COG based on an AOI with the window functionnality
+- Read a subset of a distant COG based on an AOI with the window functionality
 - Write the subset locally inside a .tif file
 
 !!! info
