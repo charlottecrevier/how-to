@@ -16,4 +16,4 @@ matrix:
   pipeline:
   - pyspelling.filters.text
   sources:
-  - '/docs/*.md'
+  - docs/*.md
