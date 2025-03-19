@@ -1,7 +1,7 @@
 matrix:
 - name: python_comments
   sources:
-  - /how-to-guides/*.py
+  - how-to-guides/*.py
   aspell:
     lang: en
     d: en_US
