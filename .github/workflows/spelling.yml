@@ -14,6 +14,7 @@ jobs:
       name: Spellcheck
       with:
         # source_files: "**/*.py"
+        config_path: .github/workflows/.spellcheck_config.yml
         task_name: python_comments
         output_file: spellcheck-output.txt
       continue-on-error: true
