@@ -13,9 +13,14 @@ matrix:
   pipeline:
   - pyspelling.filters.python:
       comments: true
-  - pyspelling.filters.url:
-      urls: false
-      emails: false
+  # - pyspelling.filters.url:
+  #     urls: false
+  #     emails: false
+  - pyspelling.filters.context:
+      context_visible_first: true
+      delimiters:
+      - open: '<'
+        close: '>'
   dictionary:
     wordlists:
     - .github/workflows/config/.wordlist-custom.txt
