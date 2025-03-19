@@ -13,10 +13,12 @@ matrix:
   pipeline:
   - pyspelling.filters.python:
       comments: true
+  - pyspelling.filters.url:
+      urls: false
+      emails: false
   dictionary:
     wordlists:
     - .github/workflows/config/.wordlist-custom.txt
-    encoding: utf-8
 
 - name: markdown
   aspell:
@@ -26,3 +28,6 @@ matrix:
   - pyspelling.filters.text
   sources:
   - docs/*.md
+  dictionary:
+    wordlists:
+    - .github/workflows/config/.wordlist-custom.txt
