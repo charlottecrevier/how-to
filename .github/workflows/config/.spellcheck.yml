@@ -38,46 +38,9 @@ matrix:
   - pyspelling.filters.markdown:
       markdown_extensions:
       - pymdownx.superfences: 
+      - pymdownx.highlight:
+      - pymdownx.inlinehilite:
+      - toc:
       # - pymdownx.snippets: 
   - pyspelling.filters.text:
   - pyspelling.filters.url:
-      # urls: false
-  - pyspelling.filters.context:
-      context_visible_first: true
-      escapes: '\\[\\`]'
-      delimiters:
-      # Ignore multiline content between fences (fences can have 3 or more back ticks)
-      # ```
-      # content
-      # ```
-      - open: '(?s)^(?P<open> *`{3,})$'
-        close: '^(?P=open)$'
-      # Ignore text between inline back ticks
-      - open: '(?P<open>`+)'
-        close: '(?P=open)'
-      - open: '(?<=\w)''s(?!\w)'
-        close: '\b'
-  # - pyspelling.filters.context:
-  #     context_visible_first: true
-  #     escapes: '\\[\\`~]'
-  #     delimiters:
-  #       # Ignore multiline content between fences starting with ```
-  #       - open: '```'
-  #         close: '```'
-  #       # pour les url
-  #       - open: '(?P<open>`+)'
-  #         close: '(?P=open)'
-  # - pyspelling.filters.context:
-  #     context_visible_first: true
-  #     escapes: '\\[\\`~]'
-  #     delimiters:
-      # Ignore multiline content between fences (fences can have 3 or more back ticks)
-      # ```
-      # content
-      # ```
-      # - open: '(?s)^(?P<open> *`{3,})$'
-      #   close: '^(?P=open)$'
-      # - open: '(?P<open>`+)'
-      #   close: '(?P=open)'
-  #     # - open: '(?s)^(?P<open> *``` *)$'
-  #     #   close: '^(?P=open)$'
