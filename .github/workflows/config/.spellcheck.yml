@@ -38,9 +38,9 @@ matrix:
   - pyspelling.filters.markdown:
       markdown_extensions:
       - pymdownx.superfences: 
-      - pymdownx.highlight:
-      - pymdownx.inlinehilite:
-      - toc:
+      # - pymdownx.highlight:
+      # - pymdownx.inlinehilite:
+      # - toc:
       # - pymdownx.snippets: 
   - pyspelling.filters.text:
   - pyspelling.filters.url:

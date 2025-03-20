@@ -8,6 +8,9 @@ blockysize
 CCMEO
 CCMEO's
 ccmeo
+COG
+COG's
+cog
 CRS
 crs
 datacube
@@ -30,11 +33,14 @@ HRDEM
 hrdem
 href
 io
+lt
 lzw
 MRDEM
 mrdem
 NODATA
 nodata
+pre
+py
 pystac
 quickstart
 radiantearth
