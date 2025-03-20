@@ -33,7 +33,7 @@ matrix:
   - pyspelling.filters.text
   - pyspelling.filters.context:
       context_visible_first: true
-      escapes: \\[\\`~]
+      escapes: '\\[\\`~]'
       delimiters:
       # Ignore multiline content between fences (fences can have 3 or more back ticks)
       # ```
