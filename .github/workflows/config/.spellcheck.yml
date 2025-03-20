@@ -32,9 +32,10 @@ matrix:
   pipeline:
   - pyspelling.filters.markdown:
       markdown_extensions:
-      - pymdownx.superfences:
-      - pymdownx.snippets:
+      - pymdownx.superfences: false
+      - pymdownx.snippets: false
   - pyspelling.filters.text:
+  - pyspelling.filters.url:
   - pyspelling.filters.context:
       context_visible_first: true
       escapes: '\\[\\`~]'
