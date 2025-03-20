@@ -39,9 +39,9 @@ matrix:
       # ```
       # content
       # ```
-      - open: '(?s)^(?P<open> *`{3,})$'
+      - open: '(?s)^(?*`{3,})$'
         close: '^(?P=open)$'
-      - open: '(?P<open>`+)'
+      - open: '(?`+)'
         close: '(?P=open)'
   sources:
   - docs/*.md
