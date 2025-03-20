@@ -33,7 +33,7 @@ matrix:
   - pyspelling.filters.markdown:
       markdown_extensions:
       - pymdownx.superfences:
-  # - pyspelling.filters.text:
+  - pyspelling.filters.text:
   - pyspelling.filters.context:
       context_visible_first: true
       escapes: \\[\\`~]
