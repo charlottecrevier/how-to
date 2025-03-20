@@ -42,8 +42,8 @@ matrix:
         - open: '```'
           close: '```'
         # pour les url
-        # - open: '(?P<open>`+)'
-        #   close: '(?P=open)'
+        - open: '(?P<open>`+)'
+          close: '(?P=open)'
   # - pyspelling.filters.context:
   #     context_visible_first: true
   #     escapes: '\\[\\`~]'
