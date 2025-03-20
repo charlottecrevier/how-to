@@ -1,8 +1,3 @@
-# dictionary:
-#     wordlists:
-#     - config/.wordlist-custom.txt
-#     encoding: utf-8
-
 matrix:
 - name: python_comments
   sources:
@@ -38,10 +33,6 @@ matrix:
   - pyspelling.filters.markdown:
       markdown_extensions:
       - pymdownx.superfences: 
-      # - pymdownx.highlight:
-      # - pymdownx.inlinehilite:
-      # - toc:
-      # - pymdownx.snippets: 
   - pyspelling.filters.text:
   - pyspelling.filters.url:
   - pyspelling.filters.html:
