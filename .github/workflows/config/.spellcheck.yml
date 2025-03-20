@@ -36,3 +36,20 @@ matrix:
   - pyspelling.filters.text:
   - pyspelling.filters.url:
   - pyspelling.filters.html:
+
+- name: root
+  aspell:
+    lang: en
+    d: en_US
+  sources:
+  - *.md
+  dictionary:
+    wordlists:
+    - .github/workflows/config/.wordlist-custom.txt
+  pipeline:
+  - pyspelling.filters.markdown:
+      markdown_extensions:
+      - pymdownx.superfences: 
+  - pyspelling.filters.text:
+  - pyspelling.filters.url:
+  - pyspelling.filters.html:

@@ -13,9 +13,7 @@ jobs:
     - uses: rojopolis/spellcheck-github-actions@v0
       name: Spellcheck
       with:
-        # source_files: "**/*.py"
         config_path: .github/workflows/config/.spellcheck.yml
-        # task_name: python_comments
         output_file: spellcheck-output.txt
       continue-on-error: true
     # - name: List files
