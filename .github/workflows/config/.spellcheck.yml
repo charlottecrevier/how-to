@@ -1,0 +1,55 @@
+matrix:
+- name: python_comments
+  sources:
+  - how-to-guides/*.py
+  aspell:
+    lang: en
+    d: en_US
+  pipeline:
+  - pyspelling.filters.python:
+      comments: true
+  # - pyspelling.filters.url:
+  #     urls: false
+  #     emails: false
+  - pyspelling.filters.context:
+      context_visible_first: true
+      delimiters:
+      - open: '<'
+        close: '>'
+  dictionary:
+    wordlists:
+    - .github/workflows/config/.wordlist-custom.txt
+
+- name: markdown
+  aspell:
+    lang: en
+    d: en_US
+  sources:
+  - docs/*.md
+  dictionary:
+    wordlists:
+    - .github/workflows/config/.wordlist-custom.txt
+  pipeline:
+  - pyspelling.filters.markdown:
+      markdown_extensions:
+      - pymdownx.superfences: 
+  - pyspelling.filters.text:
+  - pyspelling.filters.url:
+  - pyspelling.filters.html:
+
+- name: root
+  aspell:
+    lang: en
+    d: en_US
+  sources:
+  - '*.md'
+  dictionary:
+    wordlists:
+    - .github/workflows/config/.wordlist-custom.txt
+  pipeline:
+  - pyspelling.filters.markdown:
+      markdown_extensions:
+      - pymdownx.superfences: 
+  - pyspelling.filters.text:
+  - pyspelling.filters.url:
+  - pyspelling.filters.html:

@@ -1,0 +1,26 @@
+name: Spellcheck
+on:
+  push
+    # branches: [29-41-spellcheck-in-ci]
+
+jobs:
+  build:
+    name: Spellcheck
+    runs-on: ubuntu-latest
+    steps:
+    # The checkout step
+    - uses: actions/checkout@v3
+    - uses: rojopolis/spellcheck-github-actions@v0
+      name: Spellcheck
+      with:
+        config_path: .github/workflows/config/.spellcheck.yml
+        output_file: spellcheck-output.txt
+      continue-on-error: true
+    # - name: List files
+    #   run: ls -alh
+    - uses: actions/upload-artifact@v4
+      name: Create artifact
+      if: '!cancelled()' # Do not upload artifact if job was cancelled
+      with:
+        name: Spellcheck Output
+        path: spellcheck-output.txt

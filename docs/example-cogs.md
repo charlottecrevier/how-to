@@ -12,7 +12,7 @@ The following code examples uses the rasterio library. To install rasterio see [
 For more details on the rasterio library, see the [rasterio quickstart] documentation.
 
 !!! Note
-    The following examples starts with a requetes to the CCMEO STAC API via the pystac-client library.  
+    The following examples starts with a request to the CCMEO STAC API via the pystac-client library.  
 
     For more details on how to discover data through the STAC API, see the **[Interacting with CCMEO STAC API]** section
 
