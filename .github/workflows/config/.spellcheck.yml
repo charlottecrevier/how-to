@@ -42,7 +42,7 @@ matrix:
     lang: en
     d: en_US
   sources:
-  - *.md
+  - '*.md'
   dictionary:
     wordlists:
     - .github/workflows/config/.wordlist-custom.txt
