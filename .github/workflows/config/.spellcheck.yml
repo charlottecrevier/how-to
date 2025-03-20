@@ -29,14 +29,19 @@ matrix:
   aspell:
     lang: en
     d: en_US
+  sources:
+  - docs/*.md
+  dictionary:
+    wordlists:
+    - .github/workflows/config/.wordlist-custom.txt
   pipeline:
   - pyspelling.filters.markdown:
       markdown_extensions:
       - pymdownx.superfences: 
-      - pymdownx.snippets: 
+      # - pymdownx.snippets: 
   - pyspelling.filters.text:
   - pyspelling.filters.url:
-      urls: false
+      # urls: false
   - pyspelling.filters.context:
       context_visible_first: true
       escapes: '\\[\\`]'
@@ -76,8 +81,3 @@ matrix:
       #   close: '(?P=open)'
   #     # - open: '(?s)^(?P<open> *``` *)$'
   #     #   close: '^(?P=open)$'
-  sources:
-  - docs/*.md
-  dictionary:
-    wordlists:
-    - .github/workflows/config/.wordlist-custom.txt
