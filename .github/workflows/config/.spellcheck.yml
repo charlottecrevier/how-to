@@ -32,8 +32,8 @@ matrix:
   pipeline:
   - pyspelling.filters.markdown:
       markdown_extensions:
-      - pymdownx.superfences: false
-      - pymdownx.snippets: false
+      - pymdownx.superfences: 
+      - pymdownx.snippets: 
   - pyspelling.filters.text:
   - pyspelling.filters.url:
   - pyspelling.filters.context:
