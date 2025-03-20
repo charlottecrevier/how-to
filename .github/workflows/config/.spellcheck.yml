@@ -44,3 +44,4 @@ matrix:
       # - pymdownx.snippets: 
   - pyspelling.filters.text:
   - pyspelling.filters.url:
+  - pyspelling.filters.html:

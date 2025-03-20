@@ -55,7 +55,7 @@ quickstart
 radiantearth
 rasterio
 rioxarray
-Spatio-Temporal
+Spatio
 src
 STAC
 stac

@@ -7,7 +7,7 @@ for Government of Canada public COG collections.
     STAC API via STAC-Browser : <https://radiantearth.github.io/stac-browser/#/external/datacube.services.geo.ca/stac/api/?.language=en>
 
 <!--- 
-What whould be on the main page : 
+What should be on the main page : 
 A single sentence that says what the product is, succinctly and memorably.
 A paragraph of one to three short sentences, that describe what the product does.
 A third paragraph of similar length, this time explaining what need the product meets.
@@ -34,13 +34,13 @@ Finally, a paragraph that describes whom the product is useful for.
     
     :arrow_right: [how-to guides](pystac-client.md)
 
--   __References__
+-   __Quick links__
 
     ---
 
-    Useful references to **external ressources**  
+    Useful references to **external resources**  
 
-    :arrow_right: [Reference](reference.md)
+    :arrow_right: [Quick links](reference.md)
 
 <!-- -   __Explanation__  
 
