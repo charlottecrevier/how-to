@@ -8,9 +8,14 @@ blockysize
 CCMEO
 CCMEO's
 ccmeo
+CHANGELOG
+changelog
+CLI
+cli
 COG
 COG's
 cog
+cogeo
 CRS
 crs
 datacube
@@ -25,6 +30,9 @@ dsm
 EPSG
 epsg
 GeoTIFF
+geospatial
+GDAL
+GitHub
 GTiff
 html
 http
@@ -42,10 +50,12 @@ nodata
 pre
 py
 pystac
+QGIS
 quickstart
 radiantearth
 rasterio
 rioxarray
+Spatio-Temporal
 src
 STAC
 stac
@@ -53,5 +63,7 @@ stackstac
 TIFFTAG
 tif
 tiff
+TOC
+toc
 txt
 xarray

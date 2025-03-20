@@ -63,7 +63,7 @@ with rasterio.open(links[0]) as src:
         'transform': rasterio.windows.transform(window, src.transform)
     }) 
 
-# Perfom analysis ...
+# Perform analysis ...
 
 # Write the output array to a tiff file
 output_tiff = r"path/to/output.tif"

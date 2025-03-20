@@ -16,7 +16,7 @@ bbox_crs = "EPSG:4326"
 
 # Link to ccmeo datacube stac-api
 stac_root = "https://datacube.services.geo.ca/stac/api"
-# Initialiser le client STAC
+# Initialize the STAC client
 catalog = pystac_client.Client.open(stac_root)
 
 search = catalog.search(

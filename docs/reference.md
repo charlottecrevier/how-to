@@ -19,7 +19,7 @@ Non-exhaustive gathering of relevant resources.
 pystac-client  
 
 - [Install pystac-client]
-- pystac-client [github repo]
+- pystac-client [GitHub repository]
 - Some useful links from the [pystac-client] documentation website : 
     - [Item search usage example]
     - [Item search tutorial with intersects]
@@ -50,11 +50,11 @@ GDAL
 - [dask]
 
 ## Using QGIS 
-### Ressources for the stac browser plugin in QGIS
+### Resources for the stac browser plugin in QGIS
 - [STAC API Browser Plugin]
-- QGIS [CHANGELOG] with new STAC functionnality
+- QGIS [CHANGELOG] with new STAC functionality
 
-### Ressources for data streaming from QGIS
+### Resources for data streaming from QGIS
 - [Tutorial] loading a COG to QGIS
 
 
@@ -62,7 +62,7 @@ GDAL
 [Item search usage example]: https://pystac-client.readthedocs.io/en/stable/usage.html#itemsearch
 [Item search API reference]: <https://pystac-client.readthedocs.io/en/stable/api.html#item-search>
 [Item search tutorial with intersects]: https://pystac-client.readthedocs.io/en/stable/tutorials/item-search-intersects.html
-[github repo]: https://github.com/stac-utils/pystac-client/tree/main/docs/tutorials
+[GitHub repository]: https://github.com/stac-utils/pystac-client/tree/main/docs/tutorials
 [Install pystac-client]: https://github.com/stac-utils/pystac-client
 [STAC specification]: https://stacspec.org/en/
 [STAC tutorial]: https://stacspec.org/en/tutorials/

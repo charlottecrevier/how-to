@@ -10,7 +10,7 @@ The following code examples uses the pystac-client library. To install pystac-cl
 ```
 
 For more details on search parameters available with pystac-client, see [items search] documentation.
-For certificate error while accessing the STAC API, see [using custom certificat] documentation
+For certificate error while accessing the STAC API, see [using custom certificate] documentation
 
 <!-- START: Get a list of collections using pystac-client -->
 ::: how-to-guides.pystac-client-collections-example
@@ -40,7 +40,7 @@ For certificate error while accessing the STAC API, see [using custom certificat
 
 [pystac-client]: https://github.com/stac-utils/pystac-client
 [items search]: https://pystac-client.readthedocs.io/en/stable/usage.html#itemsearch
-[using custom certificat]: <https://pystac-client.readthedocs.io/en/stable/usage.html#using-custom-certificates>
+[using custom certificate]: <https://pystac-client.readthedocs.io/en/stable/usage.html#using-custom-certificates>
 
 *[COG]: Cloud Optimized GeoTIFF
 *[STAC]: Spatio-Temporal Asset Catalog
