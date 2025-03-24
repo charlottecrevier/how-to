@@ -2,7 +2,7 @@
 subtitle: Non-exhaustive gathering of relevant resources.
 --- -->
 
-# References 
+# Quick Links 
 Non-exhaustive gathering of relevant resources.
 ## Cloud-Optimized solution 
 [Cloud-Optimized Geospatial Formats Guide] from Cloud Native Geospatial
@@ -13,42 +13,43 @@ Non-exhaustive gathering of relevant resources.
 - [COG specification] from cogeo
 - COG format [intro] and [advanced] from Cloud Native Geospatial
 
-
+---
 ## Using python 
 ### Suggested references for STAC API discovery
-pystac-client  
+- pystac-client  
 
-- [Install pystac-client]
-- pystac-client [GitHub repository]
-- Some useful links from the [pystac-client] documentation website : 
-    - [Item search usage example]
-    - [Item search tutorial with intersects]
-    - [Item search API reference]
+    - [Install pystac-client]
+    - pystac-client [GitHub repository]
+    - Some useful links from the [pystac-client] documentation website : 
+        - [Item search usage example]
+        - [Item search tutorial with intersects]
+        - [Item search API reference]
 
 ### Suggested references for COG access
-[rasterio]
+- [rasterio]
 
-- [Quickstart] 
-- [Reading dataset]
+    - [Quickstart] 
+    - [Reading dataset]
 
-[stackstac]
+- [stackstac]
 
-- [Basic Example]
+    - [Basic Example]
 
-GDAL
+- GDAL
 
-- [GDAL COG Options]
-- [GDAL CLI modules]
+    - [GDAL COG Options]
+    - [GDAL CLI modules]
 
-[rioxarray]
+- [rioxarray]
 
-- [Getting started]
-- [Examples]
+    - [Getting started]
+    - [Examples]
 
 ### Additional python library of interest 
 - [xarray]
 - [dask]
 
+---
 ## Using QGIS 
 ### Resources for the stac browser plugin in QGIS
 - [STAC API Browser Plugin]

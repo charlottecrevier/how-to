@@ -40,6 +40,7 @@ Finally, a paragraph that describes whom the product is useful for.
 
     Useful references to **external resources**  
 
+
     :arrow_right: [Quick links](reference.md)
 
 <!-- -   __Explanation__  
@@ -52,6 +53,8 @@ Finally, a paragraph that describes whom the product is useful for.
 Non-exhaustive list of libraries used in the examples.
 
 ### To discover data  
+
+From [Radiant Earth] :  
 
 - [pystac-client]
 
@@ -66,6 +69,7 @@ Non-exhaustive list of libraries used in the examples.
 [rasterio]: https://rasterio.readthedocs.io/en/latest/quickstart.html
 [stackstac]: https://stackstac.readthedocs.io/en/latest/basic.html
 [rioxarray]: https://corteva.github.io/rioxarray/stable/
+[Radiant Earth]: https://github.com/radiantearth
 *[COG]: Cloud Optimized GeoTIFF
 *[CCMEO]: Canadian Center for Mapping and Earth Observation, Natural Resources Canada
 *[STAC]: Spatio-Temporal Asset Catalog

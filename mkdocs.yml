@@ -73,9 +73,12 @@ nav:
   - Home : index.md
   # - readme : README.md
   - How-to guides : 
-    - Interacting with CCMEO STAC API : pystac-client.md
+    - Quickstart :
+      - Interacting with CCMEO STAC API : pystac-client.md
     # - Interact with COGs
-    - Accessing COG data : example-cogs.md
+      - Accessing COG data : example-cogs.md
     # - Other : docs/index.md
-  - References : reference.md
+    - Advanced guide :
+      - not sure the name of this section yet : pystac-into-xarray.md
+  - Quick links : reference.md
   # - FAQ

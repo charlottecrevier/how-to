@@ -40,9 +40,30 @@ For more details on the rasterio library, see the [rasterio quickstart] document
 ```
 <!-- END: Read a subset of a cog using rasterio -->
 
+## Using rioxarray
+
+Rioxarray is based on rasterio, and can be used to read data into xarray object. 
+The following code example uses the rioxarray library. To install see [rioxarray installation].
+``` sh
+--8<-- "how-to-guides/rioxarray-requirements.txt"
+```
+For more details on the rasterio library, see the [rioxarray] documentation. 
+::: how-to-guides.rioxarray-example
+    options:
+        show_source: false
+        members: no
+        show_root_toc_entry: false # To remove the name of the file in the TOC
+
+``` py linenums="1"
+--8<-- "how-to-guides/rioxarray-example.py:code"
+```
+
+
 [rasterio installation]: https://rasterio.readthedocs.io/en/stable/installation.html
 [rasterio quickstart]: https://rasterio.readthedocs.io/en/latest/quickstart.html
 [Interacting with CCMEO STAC API]: pystac-client.md
+[rioxarray installation]: https://corteva.github.io/rioxarray/stable/installation.html
+[rioxarray]: https://corteva.github.io/rioxarray/stable/index.html
 
 *[COG]: Cloud Optimized GeoTIFF
 *[STAC]: Spatio-Temporal Asset Catalog
