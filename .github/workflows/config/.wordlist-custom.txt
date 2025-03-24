@@ -30,6 +30,7 @@ dsm
 EPSG
 epsg
 GeoTIFF
+GeoTransform
 geospatial
 GDAL
 GitHub
@@ -41,13 +42,17 @@ HRDEM
 hrdem
 href
 io
+lidar
+lidar
 lt
 lzw
 MRDEM
 mrdem
 NODATA
 nodata
+odc
 pre
+proj
 py
 pystac
 QGIS
@@ -55,6 +60,7 @@ quickstart
 radiantearth
 rasterio
 rioxarray
+rio
 Spatio
 src
 STAC

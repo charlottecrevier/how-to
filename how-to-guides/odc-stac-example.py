@@ -21,6 +21,7 @@ def reorder_transform(gdal_transform):
 # --8<-- [end:transform]
 
 import pystac_client
+import odc.stac
 
 # Define a bounding box for an AOI (Ottawa) in EPSG:4326
 bbox=[-75.8860,45.3157,-75.5261,45.5142]

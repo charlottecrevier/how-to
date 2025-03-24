@@ -80,5 +80,6 @@ nav:
     # - Other : docs/index.md
     - Advanced guide :
       - not sure the name of this section yet : pystac-into-xarray.md
+      - Re-order transform when using GDAL : reorder-transform-example.md
   - Quick links : reference.md
   # - FAQ

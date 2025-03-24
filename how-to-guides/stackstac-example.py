@@ -21,3 +21,6 @@ def reorder_transform(gdal_transform):
             gdal_transform[4], gdal_transform[5], gdal_transform[3],
             0, 0, 1]
 # --8<-- [end:transform]
+
+import pystac_client
+import stackstac

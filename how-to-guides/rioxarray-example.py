@@ -1,5 +1,5 @@
 """
-## Stream data using rioxarray
+## Read a subset of data using rioxarray
 
 In this code you will : 
 
@@ -32,7 +32,6 @@ search = catalog.search(
     bbox=bbox,
 	) 
 
-bands = []
 for page in search.pages():
     for item in page:
         print(item)
@@ -41,6 +40,9 @@ for page in search.pages():
             item.assets['dtm'].href, 
             chunks=512,
             ).rio.clip_box(*bbox,crs=bbox_crs)
+
+# See the Xarray object details
+print(band)
 # --8<-- [end:code]
 
 
