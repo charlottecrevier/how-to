@@ -64,7 +64,7 @@ For more details on the rasterio library, see the [rioxarray] documentation.
         show_root_toc_entry: false # To remove the name of the file in the TOC
 
 !!! Note 
-    When using `rioxarrray.open_rasterio()` set `chunks` to enable lazy loading with Dask. This allows Dask to read data in smaller chunks, improving speed and memory usage through parallel computing. For example, a `chunk` size of 1000 for both x and y means Dask reads 100x100 boxes instead of the entire array, processing multiple chunks simultaneously.
+    When using `rioxarray.open_rasterio()` set `chunks` to enable lazy loading with Dask. This allows Dask to read data in smaller chunks, improving speed and memory usage through parallel computing. For example, a `chunk` size of 1000 for both x and y means Dask reads 100x100 boxes instead of the entire array, processing multiple chunks simultaneously.
 
 ``` py linenums="1" hl_lines="20-23"
 --8<-- "how-to-guides/rioxarray-example.py:code"
