@@ -43,18 +43,19 @@ search = catalog.search(
     bbox=bbox,
     datetime=date_range,) 
 
-# Re-order the proj:transform to load pystac-items into Xarray using odc.stac
+# Re-order the proj:transform
 result_items = []
 # Use the pagination to improve efficiency
-# Iterate over each returned page and update the transform for each items
+# Iterate over returned page and update the transform for each items
 for page in search.pages():
     for item in page:
         # reorder_transform() function is define above
-        reordered_transform = reorder_transform(item.properties["proj:transform"])
+        reordered_transform = reorder_transform(
+                                item.properties["proj:transform"]
+                                )
         item.properties["proj:transform"] = reordered_transform
         result_items.append(item)
 
-# We can benefit from the bands argument and only import the asset needed.
 # Importing unnecessary assets may cause memory and speed issues.
 # To know the assets available in this collection :
 print(result_items[0].assets.keys())
@@ -62,19 +63,19 @@ print(result_items[0].assets.keys())
  
 items_xarray = odc.stac.load(result_items,
                      chunks = {"x": 512, "y": 512},
-                     bands = ["classification"], # Reference the asset key to use
+                     bands = ["classification"], # Asset to load
                      bbox = bbox,)
 
 print(type(items_xarray)) 
 # >> <class 'xarray.core.dataset.Dataset'>
-# See https://docs.xarray.dev/en/stable/api.html#dataset for attributes
-# --8<-- [end:code]
+# See https://docs.xarray.dev/en/stable/api.html#dataset
 
-# --8<-- [start:example]
 # At this point, the metadata and array shape are set, but the data itself isn't read.
 # Running .compute() allows Dask to optimize the workflow, evaluating and executing it 
 # in the most efficient way, optimizing resource usage.
+# --8<-- [end:code]
 
+# --8<-- [start:example]
 # Example : Get the % of change between the 2 years for the area
 # Perform the difference between the 2 years
 items_xarray = items_xarray.diff('time')

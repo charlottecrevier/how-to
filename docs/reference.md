@@ -31,10 +31,6 @@ Non-exhaustive gathering of relevant resources.
     - [Quickstart] 
     - [Reading dataset]
 
-- [stackstac]
-
-    - [Basic Example]
-
 - GDAL
 
     - [GDAL COG Options]
@@ -46,6 +42,10 @@ Non-exhaustive gathering of relevant resources.
     - [Examples]
 
 ### Additional python library of interest 
+- [stackstac]
+
+    - [Basic Example]
+    
 - [xarray]
 - [dask]
 

@@ -1,5 +1,5 @@
 """
-## Read a subset of data using rioxarray
+## Read a subset of a distant COG into an xarray
 
 In this code you will : 
 
@@ -32,10 +32,9 @@ search = catalog.search(
     bbox=bbox,
 	) 
 
+# Use the rioxarray.open_rasterio() and clip it to the bbox
 for page in search.pages():
     for item in page:
-        print(item)
-        print(item.assets['dtm'].href)
         band = rioxarray.open_rasterio(
             item.assets['dtm'].href, 
             chunks=512,

@@ -8,7 +8,7 @@ In this code you will :
 - Stream the actual data in memory with dask workflow included in odc-stac
 
 !!! info
-    This specific example uses the collections **hrdem-lidar**  and **landcover** 
+    This specific example uses the collections **hrdem-lidar**
     from CCMEO's datacube
 
 """
@@ -39,24 +39,35 @@ stac_root = "https://datacube.services.geo.ca/stac/api"
 catalog = pystac_client.Client.open(stac_root)
 
 search = catalog.search(
-	collections=['hrdem-lidar','landcover'], 
+	collections=['landcover'], 
     bbox=bbox,
     datetime=date_range,) 
 
-# Re-order the proj:transform to load pystac-items into Xarray using odc.stac
+# Re-order the proj:transform
 result_items = []
 # Use the pagination to improve efficiency
-# Iterate over each returned page and update the transform for each items
+# Iterate over returned page and update the transform for each items
 for page in search.pages():
     for item in page:
-        print(item.id, item.properties)
         # reorder_transform() function is define above
-        reordered_transform = reorder_transform(item.properties["proj:transform"])
+        reordered_transform = reorder_transform(
+                                item.properties["proj:transform"]
+                                )
         item.properties["proj:transform"] = reordered_transform
         result_items.append(item)
 
-items_xarray = stackstac.stack(result_items[0], 
-                          assets = ["dsm", "dtm", "classification"], 
-                        #   resolution = 1.0,
+# Importing unnecessary assets may cause memory and speed issues.
+# To know the assets available in this collection :
+print(result_items[0].assets.keys())
+# >> dict_keys(['classification', 'thumbnail'])
+
+items_xarray = stackstac.stack(result_items, 
+                          assets = ["classification"], 
                           bounds_latlon = bbox, 
-                          chunksize = (1000, 1000))
+                          chunksize = (1000, 1000),
+                          epsg = 3979)
+
+# At this point, the metadata and array shape are set, but the data itself isn't read.
+# Running .compute() allows Dask to optimize the workflow, evaluating and executing it 
+# in the most efficient way, optimizing resource usage.
+# # --8<-- [end:code]

@@ -78,8 +78,8 @@ nav:
     # - Interact with COGs
       - Accessing COG data : example-cogs.md
     # - Other : docs/index.md
-    - Advanced topics :
-      - not sure the name of this section yet : pystac-into-xarray.md
-      - Re-order transform when using GDAL : reorder-transform-example.md
+    - Other topics :
+      - Third party libraries : pystac-into-xarray.md
+      - Re-order transform when using GDAL based libaries : reorder-transform-example.md
   - Quick links : reference.md
   # - FAQ

@@ -1,12 +1,9 @@
-# Load pystac-client items into Xarray
+# Third-party libraries to load pystac-client items into Xarray object
 !!! info 
     To load a single COG (using the link to the s3 object) into an xarray, see [Access COG data using rioxarray]
 
-[Xarray] is build on NumPy and Pandas, adding capabilities for labeled and multi-dimensional arrays (e.g., climate data, satellite images). It extends NumPy arrays by attaching metadata (coordinates, labels), making it easier to work with data dimensions like time, latitude, longitude, and other variables.
-
-Xarray can use Dask arrays for lazy evaluation, enabling work with large datasets that don't fit in memory. Dask optimizes workflows by parallelizing tasks, reading data in chunks, and improving performance and memory efficiency.
-
-Sources : [Xarray: Parallel Computing with Dask] 
+!!! Warning
+    Those libraries are not part of the STAC ecosystem, use them with consideration. 
 
 !!! Warning
     GDAL's GetGeoTransform and rasterio use different formats for transform metadata. When using GDAL based method you need to re-order the transform. 
@@ -17,9 +14,25 @@ Sources : [Xarray: Parallel Computing with Dask]
      
     For more information, please see [STAC documentation on proj:transform]
 
-# Using stackstac
+## Using stackstac
 
 This is a third party library based on Xarray, but not listed under the Xarray documentation. 
+
+The following code examples uses the stackstac library. To install stackstac see [stackstac installation].
+``` sh
+--8<-- "how-to-guides/stackstac-requirements.txt"
+```
+
+<!-- START: Read with stackstac-stac -->
+::: how-to-guides.stackstac-example
+    options:
+        show_source: false
+        members: no
+        show_root_toc_entry: false # To remove the name of the file in the TOC
+
+``` py linenums="1" hl_lines="38-42"
+--8<-- "how-to-guides/stackstac-example.py:code"
+```
 
 ## Using odc-stac
 
@@ -37,7 +50,7 @@ The following code examples uses the odc-stac library. To install odc-stac see [
         members: no
         show_root_toc_entry: false # To remove the name of the file in the TOC
 
-``` py linenums="1" 
+``` py linenums="1" hl_lines="38-41"
 --8<-- "how-to-guides/odc-stac-example.py:code"
 ```
 
@@ -55,3 +68,4 @@ The following code examples uses the odc-stac library. To install odc-stac see [
 [STAC documentation on proj:transform]:  https://github.com/stac-extensions/projection?tab=readme-ov-file#projtransform
 [Re-order the STAC proj:Transform]: reorder-transform-example.md
 [odc-stac installation]: https://odc-stac.readthedocs.io/en/latest/intro.html#installation
+[stackstac installation]: https://stackstac.readthedocs.io/en/latest/#installation
