@@ -4,8 +4,8 @@
 In this code you will : 
 
 - Scrape the STAC using pystac-client to get pystac-items
-- Load the pystac-items into Xarray using odc-stac
-- Stream the actual data in memory with dask workflow included in odc-stac
+- Load the pystac-items into Xarray using `stackstac`
+- Stream the actual data in memory with dask workflow included in `stackstac`
 
 !!! info
     This specific example uses the collections **hrdem-lidar**
@@ -27,21 +27,17 @@ def reorder_transform(gdal_transform):
 import pystac_client
 import stackstac
 
-# Define a bounding box for an AOI (Ottawa) in EPSG:4326
-bbox=[-75.8860,45.3157,-75.5261,45.5142]
+# Define a bounding box for an AOI in EPSG:4326
+bbox=[-71.2155,45.4012,-71.1079, 45.5083]
 bbox_crs = "EPSG:4326"
-# The landcover collection has a meaningful temporal dimension
-# In this example, we filter from 2015 to 2020
-date_range = '2015-01-01/2020-12-31'
 
 # Link to ccmeo datacube stac-api
 stac_root = "https://datacube.services.geo.ca/stac/api"
 catalog = pystac_client.Client.open(stac_root)
 
 search = catalog.search(
-	collections=['landcover'], 
-    bbox=bbox,
-    datetime=date_range,) 
+	collections=['hrdem-mosaic-1m'], 
+    bbox=bbox,) 
 
 # Re-order the proj:transform
 result_items = []
@@ -59,15 +55,27 @@ for page in search.pages():
 # Importing unnecessary assets may cause memory and speed issues.
 # To know the assets available in this collection :
 print(result_items[0].assets.keys())
-# >> dict_keys(['classification', 'thumbnail'])
+# >> dict_keys(['dsm', 'dtm', 'dsm-vrt', 'dtm-vrt', 'thumbnail', 
+#               'hillshade-dsm', 'hillshade-dtm', 'extent',
+#               'coverage',])
 
 items_xarray = stackstac.stack(result_items, 
-                          assets = ["classification"], 
+                          assets = ["dsm", "dtm"], 
                           bounds_latlon = bbox, 
                           chunksize = (1000, 1000),
-                          epsg = 3979)
+                          epsg = 3979,
+                          properties=False)
 
 # At this point, the metadata and array shape are set, but the data itself isn't read.
 # Running .compute() allows Dask to optimize the workflow, evaluating and executing it 
 # in the most efficient way, optimizing resource usage.
 # # --8<-- [end:code]
+
+# --8<-- [start:example]
+# Example : Get the mean canopy height for the an AOI
+# Perform the difference between dsm and dtm
+items_xarray['height_diff'] = items_xarray[:, 0, :, :] - items_xarray[:, 1, :, :]
+# To make sure you only get canopy height, use landcover to mask non-forested area
+height_diff = items_xarray.height_diff.compute()
+height_diff.mean()
+# --8<-- [end:example]
