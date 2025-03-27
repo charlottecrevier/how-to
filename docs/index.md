@@ -13,19 +13,10 @@ A paragraph of one to three short sentences, that describe what the product does
 A third paragraph of similar length, this time explaining what need the product meets.
 Finally, a paragraph that describes whom the product is useful for.
 -->
-
+---
 
 ## In this site...
 <div class="grid cards" markdown>
-
-<!-- -   __Tutorial__
-
-    ---
-
-    **Start here**: a hands-on introduction to Example Product for new users -->
-    
-
-
 -   __How-to guides__
 
     ---
@@ -40,32 +31,39 @@ Finally, a paragraph that describes whom the product is useful for.
 
     Useful references to **external resources**  
 
+
     :arrow_right: [Quick links](reference.md)
-
-<!-- -   __Explanation__  
-
-    ---
-    **Discussion and clarification** of key topics -->
 </div>
+---
 
 ## Libraries
 Non-exhaustive list of libraries used in the examples.
 
-### To discover data  
+### To discover data
+
+From [Radiant Earth] :  
 
 - [pystac-client]
 
 ### To access data  
 
-- [rasterio]
+Third party libraries using STAC objects :
+
 - [stackstac]
+- [odc-stac]
+
+Based on GDAL :
+
+- [rasterio]
 - [rioxarray]
-- dask
+
 
 [pystac-client]: https://pystac-client.readthedocs.io/en/stable/usage.html
 [rasterio]: https://rasterio.readthedocs.io/en/latest/quickstart.html
 [stackstac]: https://stackstac.readthedocs.io/en/latest/basic.html
+[odc-stac]: https://odc-stac.readthedocs.io/en/latest/
 [rioxarray]: https://corteva.github.io/rioxarray/stable/
+[Radiant Earth]: https://github.com/radiantearth
 *[COG]: Cloud Optimized GeoTIFF
 *[CCMEO]: Canadian Center for Mapping and Earth Observation, Natural Resources Canada
 *[STAC]: Spatio-Temporal Asset Catalog

@@ -48,14 +48,16 @@ for page in search.pages():
 # Read AOI from the first COG
 with rasterio.open(links[0]) as src:
     # Transform bbox to src EPSG
-    transformed_bbox = shape(transform_geom(src.crs, bbox_crs, box(*bbox))).bounds
+    transformed_bbox = shape(transform_geom(src.crs, bbox_crs, 
+                                                box(*bbox))).bounds
     # Define the window to read the values
     window=from_bounds(transformed_bbox[0], transformed_bbox[1], 
-                       transformed_bbox[2], transformed_bbox[3], src.transform)
+                       transformed_bbox[2], transformed_bbox[3], 
+                       src.transform)
     # Read value from file
     rst = src.read(1, window=window)
     
-    # Copy and update the source metadata to be able to write it to the output tiff
+    # Copy and update the source metadata to write the output tiff
     metadata = src.meta.copy()
     metadata.update({
         'height': window.height,

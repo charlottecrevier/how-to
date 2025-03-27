@@ -73,9 +73,13 @@ nav:
   - Home : index.md
   # - readme : README.md
   - How-to guides : 
-    - Interacting with CCMEO STAC API : pystac-client.md
+    - Quickstart :
+      - Interacting with CCMEO STAC API : pystac-client.md
     # - Interact with COGs
-    - Accessing COG data : example-cogs.md
+      - Accessing COG data : example-cogs.md
     # - Other : docs/index.md
-  - References : reference.md
+    - Other topics :
+      - Third party libraries : pystac-into-xarray.md
+      - Re-order transform when using GDAL based libaries : reorder-transform-example.md
+  - Quick links : reference.md
   # - FAQ

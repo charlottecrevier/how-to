@@ -36,10 +36,15 @@ for page in search.pages():
 with rasterio.open(links[0]) as src:
     # Read the header of a COG
     print(src.tags())
-    # >> {'AREA_OR_POINT': 'Area', 'TIFFTAG_DATETIME': '2024:06:13 12:00:00'}
+    # >> {'AREA_OR_POINT': 'Area', 
+    #     'TIFFTAG_DATETIME': '2024:06:13 12:00:00'}
     print(src.profile)
-    # >> {'driver': 'GTiff', 'dtype': 'float32', 'nodata': -32767.0, 'width': 183687, 'height': 159655, 'count': 1, 'crs': CRS.from_epsg(3979), 'transform': Affine(30.0, 0.0, -2454000.0,
-    #    0.0, -30.0, 3887400.0), 'blockxsize': 512, 'blockysize': 512, 'tiled': True, 'compress': 'lzw', 'interleave': 'band'}
+    # >> {'driver': 'GTiff', 'dtype': 'float32', 'nodata': -32767.0, 
+    #   'width': 183687, 'height': 159655, 'count': 1, 
+    #   'crs': CRS.from_epsg(3979), 'transform': Affine(30.0, 0.0, 
+    #   -2454000.0, 0.0, -30.0, 3887400.0), 'blockxsize': 512, 
+    #   'blockysize': 512, 'tiled': True, 'compress': 'lzw', 
+    #   'interleave': 'band'}
 # --8<-- [end:code]
 
 

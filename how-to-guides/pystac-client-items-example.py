@@ -22,7 +22,8 @@ catalog = pystac_client.Client.open(stac_root)
 # In this example, we filter on the mosaic collection of HRDEM tiles
 collections = ['hrdem-mosaic-2m']
 # We define a bounding box extent
-extent = [-79.28229773059192, 44.31501485755303, -79.1702187573089, 44.3929540402247]
+extent = [-79.28229773059192, 44.31501485755303, 
+		  -79.1702187573089, 44.3929540402247]
 
 # Build the search query with the filtering parameters
 search = catalog.search(

@@ -1,16 +1,24 @@
 """
-####WORK IN PROGRESS#####
+## Read a subset of a distant COG into an xarray
+
 In this code you will : 
+
 - Use xarray to read header of distant COG
-- 
+- Open the distant COG by chunks
+- Read an area of interest into a Xarray in memory
+
+!!! info
+    This specific example uses the collection **hrdem-lidar** from CCMEO's datacube
+
+!!! Warning 
+    By default, the bbox used for clipping data inside rio.clip_bbox() needs to be in 
+    the projected coordinate system.  
+    See <https://corteva.github.io/rioxarray/stable/examples/clip_box.html#Clip-using-a-bounding-box>
 """
-####WORK IN PROGRESS#####
-import numpy as np
+# --8<-- [start:code]
 import pystac_client
 import rioxarray
-import xarray as xr
 
-# TODO : Define a bounding box at the edge of the 2 collections
 bbox=[-75.8860,45.3157,-75.5261,45.5142] 
 bbox_crs = "EPSG:4326"
 
@@ -20,24 +28,21 @@ stac_root = "https://datacube.services.geo.ca/stac/api"
 catalog = pystac_client.Client.open(stac_root)
 
 search = catalog.search(
-	collections=['hrdem-mosaic-1m','mrdem-30'], 
+	collections=['mrdem-30'], 
     bbox=bbox,
 	) 
 
-# Load STAC items as Xarray
-# This selects relevant assets from the STAC collection search results then convert them into a multi-dimensional arrays.
-# The resulting dimensions are time, band, y and x. 
-# No data is actually read a this stage apart from COG headers, as this is implemented as a lazy operation.
-# dtm_links = []
-bands = []
+# Use the rioxarray.open_rasterio() and clip it to the bbox
 for page in search.pages():
     for item in page:
-        print(item)
-        print(item.assets['dtm'].href)
-        # test = rasterio.open(item.assets['dtm'].href)
-        band = rioxarray.open_rasterio(item.assets['dtm'].href, chunks=512)
-        bands.append(band)
+        band = rioxarray.open_rasterio(
+            item.assets['dtm'].href, 
+            chunks=512,
+            ).rio.clip_box(*bbox,crs=bbox_crs)
 
+# See the Xarray object details
+print(band)
+# --8<-- [end:code]
 
 
 
