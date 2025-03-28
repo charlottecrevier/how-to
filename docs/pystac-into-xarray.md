@@ -1,9 +1,9 @@
 # Third-party libraries to load pystac-client items into Xarray object
-!!! info 
-    To load a single COG (using the link to the s3 object) into an xarray, see [Access COG data using rioxarray]
 
 !!! Warning
-    Those libraries are not part of the STAC ecosystem, use them with consideration. 
+    The following libraries are not part of the STAC ecosystem, use them with consideration. 
+    
+To load a single COG (using the link to the s3 object) into an xarray, see [Access COG data using rioxarray]
 
 !!! Warning
     GDAL's GetGeoTransform and rasterio use different formats for transform metadata. When using GDAL based method you need to re-order the transform. 
@@ -11,7 +11,7 @@
     ``` py
     --8<-- "how-to-guides/odc-stac-example.py:transform"
     ```
-     
+        
     For more information, please see [STAC documentation on proj:transform]
 
 ## Using stackstac
@@ -61,6 +61,10 @@ The following code examples uses the odc-stac library. To install odc-stac see [
 ``` -->
 <!-- END: Read with odc-stac -->
 
+## Community Notebook example
+
+- [Loading multi-collections in a Xarray.Dataset]
+- [Calculating the flow direction using open source library pyflwdir and Xarray.DataArray]
 
 [Access COG data using rioxarray]: example-cogs.md/#using-rioxarray
 [Xarray]: https://docs.xarray.dev/en/stable/
@@ -69,3 +73,5 @@ The following code examples uses the odc-stac library. To install odc-stac see [
 [Re-order the STAC proj:Transform]: reorder-transform-example.md
 [odc-stac installation]: https://odc-stac.readthedocs.io/en/latest/intro.html#installation
 [stackstac installation]: https://stackstac.readthedocs.io/en/latest/#installation
+
+[Loading multi-collections in a Xarray.Dataset]: notebook/multi-collection-example.ipynb
