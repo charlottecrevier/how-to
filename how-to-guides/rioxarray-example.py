@@ -11,7 +11,7 @@ In this code you will :
     This specific example uses the collection **hrdem-lidar** from CCMEO's datacube
 
 !!! Warning 
-    By default, the bbox used for clipping data inside rio.clip_bbox() needs to be in 
+    By default, the bbox used for clipping data inside `rio.clip_bbox()` needs to be in 
     the projected coordinate system.  
     See <https://corteva.github.io/rioxarray/stable/examples/clip_box.html#Clip-using-a-bounding-box>
 """
