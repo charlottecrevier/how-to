@@ -30,8 +30,14 @@ The following code examples uses the stackstac library. To install stackstac see
         members: no
         show_root_toc_entry: false # To remove the name of the file in the TOC
 
-``` py linenums="1" hl_lines="38-42"
+``` py linenums="1" hl_lines="36-41"
 --8<-- "how-to-guides/stackstac-example.py:code"
+```
+
+See `Xarray.DataArray` for methods : <https://docs.xarray.dev/en/stable/generated/xarray.DataArray.html>
+
+``` py linenums="1" 
+--8<-- "how-to-guides/stackstac-example.py:example"
 ```
 
 ## Using odc-stac
