@@ -74,4 +74,6 @@ The following code examples uses the odc-stac library. To install odc-stac see [
 [odc-stac installation]: https://odc-stac.readthedocs.io/en/latest/intro.html#installation
 [stackstac installation]: https://stackstac.readthedocs.io/en/latest/#installation
 
-[Loading multi-collections in a Xarray.Dataset]: notebook/multi-collection-example.ipynb
+<!-- TODO : Find a better way to link those jupyternotebooks... -->
+[Loading multi-collections in a Xarray.Dataset]: https://github.com/charlottecrevier/how-to/blob/cebcb055e8e57b768df20577ca5ea7f34c367c0c/how-to-guides/notebook/multi-collection-example.ipynb
+[Calculating the flow direction using open source library pyflwdir and Xarray.DataArray]: https://github.com/charlottecrevier/how-to/blob/cebcb055e8e57b768df20577ca5ea7f34c367c0c/how-to-guides/notebook/pyflwdir-example.ipynb
