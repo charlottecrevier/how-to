@@ -4,11 +4,11 @@
 In this code you will : 
 
 - Scrape the STAC using pystac-client to get pystac-items
-- Load the pystac-items into Xarray using `stackstac`
+- Load the `pystac-item` into Xarray.DataArray using `stackstac`
 - Stream the actual data in memory with dask workflow included in `stackstac`
 
 !!! info
-    This specific example uses the collections **hrdem-lidar**
+    This specific example uses the collections **hrdem-mosaic-1m**
     from CCMEO's datacube
 
 """
@@ -72,10 +72,10 @@ items_xarray = stackstac.stack(result_items,
 # # --8<-- [end:code]
 
 # --8<-- [start:example]
-# Example : Get the mean canopy height for the an AOI
+# Example : Get the mean surface height for the an AOI
 # Perform the difference between dsm and dtm
-items_xarray['height_diff'] = items_xarray[:, 0, :, :] - items_xarray[:, 1, :, :]
+items_xarray['surface_height'] = items_xarray[:, 0, :, :] - items_xarray[:, 1, :, :]
 # To make sure you only get canopy height, use landcover to mask non-forested area
-height_diff = items_xarray.height_diff.compute()
-height_diff.mean()
+surface_height = items_xarray.surface_height.compute()
+surface_height.mean()
 # --8<-- [end:example]

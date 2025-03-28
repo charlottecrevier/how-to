@@ -4,7 +4,7 @@
 In this code you will : 
 
 - Scrape the STAC using `pystac-client` to get `pystac-item` object
-- Load the `pystac-item` object into a Xarray using `odc.stac`
+- Load the `pystac-item` object into a Xarray.Dataset using `odc.stac`
 
 !!! info
     This specific example uses the collection **landcover** from CCMEO's datacube.
