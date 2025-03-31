@@ -67,8 +67,6 @@ matrix:
   - pyspelling.filters.python:
       comments: true
   - pyspelling.filters.markdown:
-      markdown_extensions:
-      - pymdownx.superfences: 
   - pyspelling.filters.text:
   - pyspelling.filters.url:
   - pyspelling.filters.html:
