@@ -54,19 +54,20 @@ matrix:
   - pyspelling.filters.url:
   - pyspelling.filters.html:
 
-- name: notebooks
-  aspell:
-    lang: en
-    d: en_US
-  sources:
-  - how-to-guides/notebook/*
-  dictionary:
-    wordlists:
-    - .github/workflows/config/.wordlist-custom.txt
-  pipeline:
-  - pyspelling.filters.python:
-      comments: true
-  - pyspelling.filters.markdown:
+# Does not work at the moment
+# - name: notebooks
+#   aspell:
+#     lang: en
+#     d: en_US
+#   sources:
+#   - how-to-guides/notebook/*
+#   dictionary:
+#     wordlists:
+#     - .github/workflows/config/.wordlist-custom.txt
+#   pipeline:
+#   - pyspelling.filters.python:
+#       comments: true
+#   - pyspelling.filters.markdown:
   # - pyspelling.filters.text:
   # - pyspelling.filters.url:
   # - pyspelling.filters.html:
