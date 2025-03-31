@@ -1,9 +1,9 @@
 # Third-party libraries to load pystac-client items into Xarray object
-!!! info 
-    To load a single COG (using the link to the s3 object) into an xarray, see [Access COG data using rioxarray]
 
 !!! Warning
-    Those libraries are not part of the STAC ecosystem, use them with consideration. 
+    The following libraries are not part of the STAC ecosystem, use them with consideration. 
+    
+To load a single COG (using the link to the s3 object) into an xarray, see [Access COG data using rioxarray]
 
 !!! Warning
     GDAL's GetGeoTransform and rasterio use different formats for transform metadata. When using GDAL based method you need to re-order the transform. 
@@ -11,7 +11,7 @@
     ``` py
     --8<-- "how-to-guides/odc-stac-example.py:transform"
     ```
-     
+        
     For more information, please see [STAC documentation on proj:transform]
 
 ## Using stackstac
@@ -30,8 +30,14 @@ The following code examples uses the stackstac library. To install stackstac see
         members: no
         show_root_toc_entry: false # To remove the name of the file in the TOC
 
-``` py linenums="1" hl_lines="38-42"
+``` py linenums="1" hl_lines="36-41"
 --8<-- "how-to-guides/stackstac-example.py:code"
+```
+
+See `Xarray.DataArray` for methods : <https://docs.xarray.dev/en/stable/generated/xarray.DataArray.html>
+
+``` py linenums="1" 
+--8<-- "how-to-guides/stackstac-example.py:example"
 ```
 
 ## Using odc-stac
@@ -61,6 +67,10 @@ The following code examples uses the odc-stac library. To install odc-stac see [
 ``` -->
 <!-- END: Read with odc-stac -->
 
+## Community Notebook example
+
+- [Loading multi-collections in a Xarray.Dataset]
+- [Calculating the flow direction using open source library pyflwdir and Xarray.DataArray]
 
 [Access COG data using rioxarray]: example-cogs.md/#using-rioxarray
 [Xarray]: https://docs.xarray.dev/en/stable/
@@ -69,3 +79,7 @@ The following code examples uses the odc-stac library. To install odc-stac see [
 [Re-order the STAC proj:Transform]: reorder-transform-example.md
 [odc-stac installation]: https://odc-stac.readthedocs.io/en/latest/intro.html#installation
 [stackstac installation]: https://stackstac.readthedocs.io/en/latest/#installation
+
+<!-- TODO : Find a better way to link those jupyternotebooks... -->
+[Loading multi-collections in a Xarray.Dataset]: https://github.com/charlottecrevier/how-to/blob/cebcb055e8e57b768df20577ca5ea7f34c367c0c/how-to-guides/notebook/multi-collection-example.ipynb
+[Calculating the flow direction using open source library pyflwdir and Xarray.DataArray]: https://github.com/charlottecrevier/how-to/blob/cebcb055e8e57b768df20577ca5ea7f34c367c0c/how-to-guides/notebook/pyflwdir-example.ipynb

@@ -3,8 +3,8 @@
 
 In this code you will : 
 
-- Scrape the STAC using pystac-client to get pystac-item object
-- Load the pystac-item object into a Xarray using odc.stac
+- Scrape the STAC using `pystac-client` to get `pystac-item` object
+- Load the `pystac-item` object into a Xarray.Dataset using `odc.stac`
 
 !!! info
     This specific example uses the collection **landcover** from CCMEO's datacube.
@@ -74,9 +74,3 @@ print(type(items_xarray))
 # Running .compute() allows Dask to optimize the workflow, evaluating and executing it 
 # in the most efficient way, optimizing resource usage.
 # --8<-- [end:code]
-
-# --8<-- [start:example]
-# Example : Get the % of change between the 2 years for the area
-# Perform the difference between the 2 years
-items_xarray = items_xarray.diff('time')
-# --8<-- [end:example]
