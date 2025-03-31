@@ -63,12 +63,10 @@ matrix:
   dictionary:
     wordlists:
     - .github/workflows/config/.wordlist-custom.txt
-  # pipeline:
+  pipeline:
   # - pyspelling.filters.python:
   #     comments: true
-  # - pyspelling.filters.ipynb:
-  #     cell_type: markdown
-  # - pyspelling.filters.markdown:
+  - pyspelling.filters.markdown:
   # - pyspelling.filters.text:
   # - pyspelling.filters.url:
   # - pyspelling.filters.html:
