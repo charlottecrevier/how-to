@@ -66,6 +66,8 @@ matrix:
   pipeline:
   - pyspelling.filters.python:
       comments: true
+  - pyspelling.filters.ipynb:
+      cell_type: markdown
   - pyspelling.filters.markdown:
   - pyspelling.filters.text:
   - pyspelling.filters.url:
