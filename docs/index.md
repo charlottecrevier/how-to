@@ -57,6 +57,10 @@ Based on GDAL :
 - [rasterio]
 - [rioxarray]
 
+## Report an Issue
+
+If you encounter any issues, please create a new issue using our template.
+</issues/new>  
 
 [pystac-client]: https://pystac-client.readthedocs.io/en/stable/usage.html
 [rasterio]: https://rasterio.readthedocs.io/en/latest/quickstart.html

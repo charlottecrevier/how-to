@@ -27,3 +27,7 @@ Non-exhaustive list of libraries used in the examples.
 [rasterio]: https://rasterio.readthedocs.io/en/latest/quickstart.html
 [stackstac]: https://stackstac.readthedocs.io/en/latest/basic.html
 [rioxarray]: https://corteva.github.io/rioxarray/stable/
+
+## Report an Issue
+
+If you encounter any issues, please create a new issue using our templates.
