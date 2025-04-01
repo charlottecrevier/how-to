@@ -60,7 +60,7 @@ Based on GDAL :
 ## Report an Issue
 
 If you encounter any issues, please create a new issue using our template.
-<Insert link to issue>  
+</issues/new>  
 
 [pystac-client]: https://pystac-client.readthedocs.io/en/stable/usage.html
 [rasterio]: https://rasterio.readthedocs.io/en/latest/quickstart.html
