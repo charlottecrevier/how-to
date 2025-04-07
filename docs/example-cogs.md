@@ -56,7 +56,8 @@ The following code example uses the rioxarray library. To install see [rioxarray
 ``` sh
 --8<-- "how-to-guides/rioxarray-requirements.txt"
 ```
-For more details on the rasterio library, see the [rioxarray] documentation. 
+The developpers of the rioxarray library provide additional usage examples. 
+For more details, see the [rioxarray] documentation. 
 
 ::: how-to-guides.rioxarray-example
     options:
