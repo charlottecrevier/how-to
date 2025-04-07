@@ -9,7 +9,7 @@ The following code examples uses the pystac-client library. To install pystac-cl
 --8<-- "how-to-guides/pystac-client-requirements.txt:3:3"
 ```
 
-The developpers of the pystac-client library provide multiple [examples] for interacting with
+The developers of the pystac-client library provide multiple [examples] for interacting with
 STAC API. Please refer to those and consult the [pystac-client documentation] for additional information. 
 
 For more details on search parameters available with pystac-client, see [items search] documentation.
