@@ -9,6 +9,9 @@ The following code examples uses the pystac-client library. To install pystac-cl
 --8<-- "how-to-guides/pystac-client-requirements.txt:3:3"
 ```
 
+The developpers of the pystac-client library provide multiple [examples] for interacting with
+STAC API. Please refer to those and consult the [pystac-client documentation] for additional information. 
+
 For more details on search parameters available with pystac-client, see [items search] documentation.
 For certificate error while accessing the STAC API, see [using custom certificate] documentation
 
@@ -41,6 +44,8 @@ For certificate error while accessing the STAC API, see [using custom certificat
 [pystac-client]: https://github.com/stac-utils/pystac-client
 [items search]: https://pystac-client.readthedocs.io/en/stable/usage.html#itemsearch
 [using custom certificate]: <https://pystac-client.readthedocs.io/en/stable/usage.html#using-custom-certificates>
+[examples]: https://pystac-client.readthedocs.io/en/latest/tutorials.html
+[pystac-client documentation]: https://pystac-client.readthedocs.io/en/latest/quickstart.html
 
 *[COG]: Cloud Optimized GeoTIFF
 *[STAC]: Spatio-Temporal Asset Catalog
