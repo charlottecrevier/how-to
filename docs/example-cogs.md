@@ -9,7 +9,7 @@ The following code examples uses the rasterio library. To install rasterio see [
 --8<-- "how-to-guides/rasterio-requirements.txt:2"
 ```
 
-The developpers of the rasterio library provide additional examples of usage. 
+The developers of the rasterio library provide additional examples of usage. 
 For more details on the rasterio library, see the [rasterio quickstart] documentation.
 
 !!! Note
