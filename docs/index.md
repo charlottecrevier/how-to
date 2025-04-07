@@ -1,6 +1,10 @@
 # Cloud-Optimized Geospatial Data Access
-Non-exhaustive good practices and tutorials for Cloud Optimized data access
-for Government of Canada public COG collections. 
+!!! Note
+    All the libraries and ressources presented are open-source and have there own licensing.
+    Please refere to the specific libraries doucmentation for sharing mechanism.
+
+Suggested and non-exhaustive best practices and tutorials using open-source libraries for Cloud Optimized data access
+for Government of Canada data collections. 
 
 !!! info "Link to CCMEO COG collections "
     STAC API : <https://datacube.services.geo.ca/stac/api/>  
