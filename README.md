@@ -1,6 +1,6 @@
 # Cloud-Optimized Geospatial Data Access
 Non-exhaustive best practices and tutorials using open-source library for Cloud Optimized data access
-for Government of Canada COG collections. 
+for Government of Canada data collections. 
 
 Main documentation is under the GitHub pages repository site.   
 Built with : [![Built with Material for MkDocs](https://img.shields.io/badge/Material_for_MkDocs-526CFE?style=for-the-badge&logo=MaterialForMkDocs&logoColor=white)](https://squidfunk.github.io/mkdocs-material/)
