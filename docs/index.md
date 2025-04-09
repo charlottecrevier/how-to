@@ -1,10 +1,10 @@
-# Cloud-Optimized Geospatial Data Access
+# Cloud Optimized Geospatial Data Access
 !!! Note
     All the libraries and resources presented here are open-source and have their own licensing.
-    Please refer to the specific libraries documentation for sharing mechanism.
+    Please refer to the specific libraries documentation for licensing information.
 
-Suggested and non-exhaustive best practices and tutorials using open-source libraries for Cloud Optimized data access
-for Government of Canada data collections. 
+Best practices and tutorials using open-source libraries for Cloud Optimized GeoTIFF (COG) access
+from the Canada Centre for Mapping and Earth Observation (CCMEO) datacube. 
 
 !!! info "Link to CCMEO COG collections "
     STAC API : <https://datacube.services.geo.ca/stac/api/>  
@@ -29,37 +29,36 @@ Finally, a paragraph that describes whom the product is useful for.
     
     :arrow_right: [how-to guides](pystac-client.md)
 
--   __Quick links__
+-   __External references__
 
     ---
 
-    Useful references to **external resources**  
+    Useful **external references**  
 
 
     :arrow_right: [Quick links](reference.md)
 </div>
 ---
 
-## Libraries
-Non-exhaustive list of libraries used in the examples.
+## Libraries used in the examples:
 
-### To discover data
+### To Discover Data
 
 From [Radiant Earth] :  
 
 - [pystac-client]
 
-### To access data  
-
-Third party libraries using STAC objects :
-
-- [stackstac]
-- [odc-stac]
+### To Access Data  
 
 Based on GDAL :
 
 - [rasterio]
 - [rioxarray]
+
+Third party libraries using STAC objects :
+
+- [stackstac]
+- [odc-stac]
 
 ## Report an Issue
 
@@ -73,5 +72,5 @@ If you encounter any issues, please create a new issue using our template.
 [rioxarray]: https://corteva.github.io/rioxarray/stable/
 [Radiant Earth]: https://github.com/radiantearth
 *[COG]: Cloud Optimized GeoTIFF
-*[CCMEO]: Canadian Center for Mapping and Earth Observation, Natural Resources Canada
+*[CCMEO]: Canada Center for Mapping and Earth Observation, Natural Resources Canada
 *[STAC]: Spatio-Temporal Asset Catalog

@@ -1,10 +1,10 @@
 """
-## Read the header of a distant COG
+## Read the header of a remote COG
 
 In this code you will : 
 
-- Scrape the STAC using pystac-client to get link to a COG;  
-- Read header metadata from a distant COG file
+- Query a STAC API with pystac-client to get link to a COG;  
+- Read header metadata from a remote COG file
 
 !!! info
     This specific example uses the collection **mrdem-30** from CCMEO's datacube
@@ -14,7 +14,7 @@ import pystac_client
 import rasterio 
 
 # Define a bounding box for an AOI (Ottawa) in EPSG:4326
-bbox=[-75.8860,45.3157,-75.5261,45.5142]
+bbox = [-75.8860,45.3157,-75.5261,45.5142]
 bbox_crs = "EPSG:4326"
 
 # Link to ccmeo datacube stac-api
@@ -32,7 +32,7 @@ for page in search.pages():
 	for item in page:
 		links.append(item.assets['dtm'].href)
 
-# Read the header of a distant COG 
+# Read the header of a remote COG 
 with rasterio.open(links[0]) as src:
     # Read the header of a COG
     print(src.tags())

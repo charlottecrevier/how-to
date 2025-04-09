@@ -1,18 +1,19 @@
 """
-## Read a subset of a distant COG
+## Read a portion of a remote COG
 
 In this code you will : 
 
-- Scrape the STAC using pystac-client to get link to a COG
-- Read a subset of a distant COG based on an AOI with the window functionality
-- Write the subset locally inside a .tif file
+- Query a STAC API with pystac-client to get link to a COG;
+- Read a portion of a remote COG based on an AOI with the window functionality;
+- Optionally write the portion locally inside a .tif file
 
 !!! info
     This specific example uses the collection **mrdem-30** from CCMEO's datacube
 
 !!! Tip
     COG'S file contains internal tiling that can be leverage by iterating on
-    the `src.block_windows()` while reading.
+    the `src.block_windows()` while reading. If the reading window does not align with 
+    the internal tiling of the file, the data will be resampled. 
 
     Example : <https://rasterio.readthedocs.io/en/stable/topics/windowed-rw.html#blocks>
 

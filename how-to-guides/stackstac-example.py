@@ -3,8 +3,8 @@
 
 In this code you will : 
 
-- Scrape the STAC using pystac-client to get pystac-items
-- Load the `pystac-item` into Xarray.DataArray using `stackstac`
+- Query a STAC API with pystac-client to get a `pystac-item` object; 
+- Load the `pystac-item` object into an Xarray.DataArray using `stackstac`
 - Stream the actual data in memory with dask workflow included in `stackstac`
 
 !!! info

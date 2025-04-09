@@ -1,7 +1,7 @@
-# Third-party libraries to load pystac-client items into Xarray object
+# Third Party Libraries to Load pystac-client Items Into Xarray Object
 
 !!! Warning
-    The following libraries are not part of the STAC ecosystem, use them with consideration. 
+    The following libraries are not part of the STAC utils [ecosystem]. 
     
 To load a single COG (using the link to the s3 object) into an xarray, see [Access COG data using rioxarray]
 
@@ -18,10 +18,10 @@ To load a single COG (using the link to the s3 object) into an xarray, see [Acce
 
 This is a third party library based on Xarray, but not listed under the Xarray documentation. 
 
-The following code examples uses the stackstac library. To install stackstac see [stackstac installation].
 ``` sh
 --8<-- "how-to-guides/stackstac-requirements.txt"
 ```
+To install see [stackstac installation].
 
 <!-- START: Read with stackstac-stac -->
 ::: how-to-guides.stackstac-example
@@ -34,7 +34,7 @@ The following code examples uses the stackstac library. To install stackstac see
 --8<-- "how-to-guides/stackstac-example.py:code"
 ```
 
-See `Xarray.DataArray` for methods : <https://docs.xarray.dev/en/stable/generated/xarray.DataArray.html>
+See `Xarray.DataArray` for details on methods : <https://docs.xarray.dev/en/stable/generated/xarray.DataArray.html>
 
 ``` py linenums="1" 
 --8<-- "how-to-guides/stackstac-example.py:example"
@@ -44,11 +44,10 @@ See `Xarray.DataArray` for methods : <https://docs.xarray.dev/en/stable/generate
 
 This is a third party library based on Xarray, but not listed under the Xarray documentation. 
 
-The following code examples uses the odc-stac library. To install odc-stac see [odc-stac installation].
 ``` sh
 --8<-- "how-to-guides/odc-stac-requirements.txt"
 ```
-
+To install odc-stac see [odc-stac installation].
 <!-- START: Read with odc-stac -->
 ::: how-to-guides.odc-stac-example
     options:
@@ -67,7 +66,7 @@ The following code examples uses the odc-stac library. To install odc-stac see [
 ``` -->
 <!-- END: Read with odc-stac -->
 
-## Community Notebook example
+## Community Notebook examples
 
 - [Loading multi-collections in a Xarray.Dataset]
 - [Calculating the flow direction using open source library pyflwdir and Xarray.DataArray]
@@ -79,6 +78,7 @@ The following code examples uses the odc-stac library. To install odc-stac see [
 [Re-order the STAC proj:Transform]: reorder-transform-example.md
 [odc-stac installation]: https://odc-stac.readthedocs.io/en/latest/intro.html#installation
 [stackstac installation]: https://stackstac.readthedocs.io/en/latest/#installation
+[ecosystem]: https://github.com/stac-utils
 
 <!-- TODO : Find a better way to link those jupyternotebooks... -->
 [Loading multi-collections in a Xarray.Dataset]: https://github.com/charlottecrevier/how-to/blob/cebcb055e8e57b768df20577ca5ea7f34c367c0c/how-to-guides/notebook/multi-collection-example.ipynb

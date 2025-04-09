@@ -1,11 +1,12 @@
 """
-## Read a subset of a distant COG into an xarray
+## Read a portion of a remote COG into an xarray
 
 In this code you will : 
 
-- Use xarray to read header of distant COG
-- Open the distant COG by chunks
-- Read an area of interest into a Xarray in memory
+- Query a STAC API with pystac-client to get link to a COG;  
+- Use rioxarray to read header of remote COG;
+- Open the remote COG by chunks;
+- Read an area of interest into an in memory Xarray object
 
 !!! info
     This specific example uses the collection **hrdem-lidar** from CCMEO's datacube

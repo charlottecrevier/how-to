@@ -1,9 +1,9 @@
 """
-## Get a list of items
+## List items
 
 In this example you will learn how to :   
 
-- Queries the ccmeo datacube STAC API with pystac-client with a subset of filter;   
+- Query a STAC API with pystac-client with a portion of filter;   
 - Access the data href for the specific filter.  
 
 !!! info

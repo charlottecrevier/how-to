@@ -1,7 +1,8 @@
-site_name: Cloud-Optimized Geospatial Data Access 
+site_name: Cloud Optimized Geospatial Data Access 
 site_url: https://charlottecrevier.github.io/how-to/
 repo_url: https://github.com/charlottecrevier/how-to
 repo_name: charlottecrevier/how-to # To be changed when will be on NRCan
+copyright: Open government license https://open.canada.ca/en/open-government-licence-canada
 
 site_dir: public
 
@@ -72,14 +73,14 @@ markdown_extensions:
 nav:
   - Home : index.md
   # - readme : README.md
-  - How-to guides : 
+  - How-to Guides : 
     - Quickstart :
-      - Interacting with CCMEO STAC API : pystac-client.md
+      - STAC API : pystac-client.md
     # - Interact with COGs
-      - Accessing COG data : example-cogs.md
+      - COG : example-cogs.md
     # - Other : docs/index.md
-    - Other topics :
+    - Additional Information :
       - Third party libraries : pystac-into-xarray.md
-      - Re-order transform when using GDAL based libaries : reorder-transform-example.md
-  - Quick links : reference.md
+      - Known Bugs : reorder-transform-example.md
+  - External References : reference.md
   # - FAQ

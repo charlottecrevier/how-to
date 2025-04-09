@@ -1,4 +1,4 @@
-# Cloud-Optimized Geospatial Data Access
+# Cloud Optimized Geospatial Data Access
 Non-exhaustive best practices and tutorials using open-source library for Cloud Optimized data access
 for Government of Canada data collections. 
 

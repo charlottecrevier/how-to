@@ -2,25 +2,24 @@
 subtitle: Non-exhaustive gathering of relevant resources.
 --- -->
 
-# Quick Links 
-Non-exhaustive gathering of relevant resources.
-## Cloud-Optimized solution 
-[Cloud-Optimized Geospatial Formats Guide] from Cloud Native Geospatial
+# External References 
+
+## Cloud Optimized Solution 
+[Cloud Optimized Geospatial Formats Guide] from Cloud Native Geospatial
 ### Suggested references for STAC 
 - [STAC specification]
 - [STAC tutorial]
-### Suggested references for COG's
-- [COG specification] from cogeo
+### Suggested references for COGs
 - COG format [intro] and [advanced] from Cloud Native Geospatial
 
 ---
-## Using python 
+## Using Python 
 ### Suggested references for STAC API discovery
 - pystac-client  
 
     - [Install pystac-client]
-    - pystac-client [GitHub repository]
-    - Some useful links from the [pystac-client] documentation website : 
+    - [GitHub repository]
+    - Useful links from the [pystac-client] documentation website : 
         - [Item search usage example]
         - [Item search tutorial with intersects]
         - [Item search API reference]
@@ -51,7 +50,7 @@ Non-exhaustive gathering of relevant resources.
 
 ---
 ## Using QGIS 
-### Resources for the stac browser plugin in QGIS
+### STAC browser plugin in QGIS
 - [STAC API Browser Plugin]
 - QGIS [CHANGELOG] with new STAC functionality
 
@@ -67,8 +66,7 @@ Non-exhaustive gathering of relevant resources.
 [Install pystac-client]: https://github.com/stac-utils/pystac-client
 [STAC specification]: https://stacspec.org/en/
 [STAC tutorial]: https://stacspec.org/en/tutorials/
-[Cloud-Optimized Geospatial Formats Guide]: https://guide.cloudnativegeo.org/
-[COG specification]: https://www.cogeo.org/
+[Cloud Optimized Geospatial Formats Guide]: https://guide.cloudnativegeo.org/
 [intro]: https://guide.cloudnativegeo.org/cloud-optimized-geotiffs/intro.html
 [advanced]: https://guide.cloudnativegeo.org/cloud-optimized-geotiffs/cogs-details.html
 [rasterio]: https://github.com/rasterio/rasterio
