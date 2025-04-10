@@ -41,8 +41,18 @@ for page in search.pages():
             chunks=512,
             ).rio.clip_box(*bbox,crs=bbox_crs)
 
+# At this point the data is not read in the Xarray object
 # See the Xarray object details
 print(band)
+
+# Now, all xarray.DataArray methods are available
+print(type(band))
+# >> <class 'xarray.core.dataarray.DataArray'>
+
+# Perform analysis...
+
+# To read the data
+band.compute()
 # --8<-- [end:code]
 
 

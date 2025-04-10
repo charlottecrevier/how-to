@@ -44,7 +44,7 @@ For more details on the rasterio library, see the [rasterio] documentation.
 
 ## Using [rioxarray]
 
-Rioxarray is based on rasterio, and can be used to read data into xarray object. The developpers of the rioxarray library provide additional usage examples.
+Rioxarray is based on rasterio, and can be used to read data into xarray object. The developpers of the rioxarray library provide additional usage examples, like this [one](https://corteva.github.io/rioxarray/stable/examples/read-locks.html).
 
 !!! info
     [Xarray] is build on NumPy and Pandas, adding capabilities for labeled and multi-dimensional arrays (e.g., climate data, satellite images). It extends NumPy arrays by attaching metadata (coordinates, labels), making it easier to work with data dimensions like time, latitude, longitude, and other variables.
