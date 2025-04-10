@@ -32,3 +32,6 @@ Non-exhaustive list of libraries used in the examples.
 ## Report an Issue
 
 If you encounter any issues, please create a new issue using our templates.
+
+## License
+The examples are released under the [Open Government License - Canada](https://open.canada.ca/en/open-government-licence-canada).
