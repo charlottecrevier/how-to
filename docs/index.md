@@ -1,7 +1,4 @@
 # Cloud Optimized Geospatial Data Access
-!!! Note
-    All the libraries and resources presented here are open-source and have their own licensing.
-    Please refer to the specific libraries documentation for licensing information.
 
 Best practices and tutorials using open-source libraries for Cloud Optimized GeoTIFF (COG) access
 from the Canada Centre for Mapping and Earth Observation (CCMEO) datacube. 

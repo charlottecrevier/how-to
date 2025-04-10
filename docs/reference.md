@@ -14,7 +14,7 @@ subtitle: Non-exhaustive gathering of relevant resources.
 
 ---
 ## Using Python 
-### Suggested references for STAC API discovery
+### Suggested references for STAC API usage
 - pystac-client  
 
     - [Install pystac-client]
@@ -40,7 +40,7 @@ subtitle: Non-exhaustive gathering of relevant resources.
     - [Getting started]
     - [Examples]
 
-### Additional python library of interest 
+### Additional python library
 - [stackstac]
 
     - [Basic Example]
