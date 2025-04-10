@@ -21,7 +21,7 @@ This is a third party library based on Xarray, but not listed under the Xarray d
 ``` sh
 --8<-- "how-to-guides/stackstac-requirements.txt"
 ```
-To install see [stackstac installation].
+For more details see [stackstac installation].
 
 <!-- START: Read with stackstac-stac -->
 ::: how-to-guides.stackstac-example
@@ -47,7 +47,8 @@ This is a third party library based on Xarray, but not listed under the Xarray d
 ``` sh
 --8<-- "how-to-guides/odc-stac-requirements.txt"
 ```
-To install odc-stac see [odc-stac installation].
+For more details see [odc-stac installation].
+
 <!-- START: Read with odc-stac -->
 ::: how-to-guides.odc-stac-example
     options:
@@ -66,7 +67,7 @@ To install odc-stac see [odc-stac installation].
 ``` -->
 <!-- END: Read with odc-stac -->
 
-## Community Notebook examples
+## Community Notebook complete examples
 
 - [Loading multi-collections in a Xarray.Dataset]
 - [Calculating the flow direction using open source library pyflwdir and Xarray.DataArray]

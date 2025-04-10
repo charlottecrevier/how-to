@@ -2,7 +2,7 @@ site_name: Cloud Optimized Geospatial Data Access
 site_url: https://charlottecrevier.github.io/how-to/
 repo_url: https://github.com/charlottecrevier/how-to
 repo_name: charlottecrevier/how-to # To be changed when will be on NRCan
-copyright: Open government license https://open.canada.ca/en/open-government-licence-canada
+copyright: <a href="https://open.canada.ca/en/open-government-licence-canada"> Open Government Licence - Canada</a>
 
 site_dir: public
 
@@ -49,6 +49,8 @@ plugins:
   - git-committers:
       repository: charlottecrevier/how-to
       branch: main
+      exclude_committers: 
+        - web-flow
       # token: !ENV MKDOCS_GIT_COMMITTERS_APIKEY
 
 markdown_extensions:

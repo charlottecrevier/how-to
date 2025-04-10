@@ -26,17 +26,16 @@ Finally, a paragraph that describes whom the product is useful for.
     ---
 
     **Code examples** covering key operations and common tasks
-    
     :arrow_right: [how-to guides](pystac-client.md)
 
 -   __External references__
 
     ---
 
-    Useful **external references**  
+    :arrow_right: [**external references**](reference.md)  
 
 
-    :arrow_right: [Quick links](reference.md)
+    <!-- :arrow_right: [Quick links](reference.md) -->
 </div>
 ---
 
