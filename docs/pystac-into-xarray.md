@@ -1,9 +1,9 @@
-# Third Party Libraries to Load pystac-client Items Into Xarray Object
+# Third Party Libraries
 
 !!! Warning
-    The following libraries are not part of the STAC utils [ecosystem]. 
+    The following libraries are not part of the [STAC utils] ecosystem. 
     
-To load a single COG (using the link to the s3 object) into an xarray, see [Access COG data using rioxarray]
+Examples of loading [pystac-client] items object into Xarray object. To load a single COG (using the link to the s3 object) into an xarray, see [Access COG data using rioxarray]
 
 !!! Warning
     GDAL's GetGeoTransform and rasterio use different formats for transform metadata. When using GDAL based method you need to re-order the transform. 
@@ -14,7 +14,7 @@ To load a single COG (using the link to the s3 object) into an xarray, see [Acce
         
     For more information, please see [STAC documentation on proj:transform]
 
-## Using stackstac
+## Using [stackstac]
 
 This is a third party library based on Xarray, but not listed under the Xarray documentation. 
 
@@ -40,7 +40,7 @@ See `Xarray.DataArray` for details on methods : <https://docs.xarray.dev/en/stab
 --8<-- "how-to-guides/stackstac-example.py:example"
 ```
 
-## Using odc-stac
+## Using [odc-stac]
 
 This is a third party library based on Xarray, but not listed under the Xarray documentation. 
 
@@ -79,7 +79,9 @@ For more details see [odc-stac installation].
 [Re-order the STAC proj:Transform]: reorder-transform-example.md
 [odc-stac installation]: https://odc-stac.readthedocs.io/en/latest/intro.html#installation
 [stackstac installation]: https://stackstac.readthedocs.io/en/latest/#installation
-[ecosystem]: https://github.com/stac-utils
+[STAC utils]: https://github.com/stac-utils
+[pystac-client]: https://pystac-client.readthedocs.io/en/stable/
+[stackstac]: https://stackstac.readthedocs.io/en/latest/
 
 <!-- TODO : Find a better way to link those jupyternotebooks... -->
 [Loading multi-collections in a Xarray.Dataset]: https://github.com/charlottecrevier/how-to/blob/cebcb055e8e57b768df20577ca5ea7f34c367c0c/how-to-guides/notebook/multi-collection-example.ipynb

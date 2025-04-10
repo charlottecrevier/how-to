@@ -9,6 +9,7 @@ subtitle: Non-exhaustive gathering of relevant resources.
 ### Suggested references for STAC 
 - [STAC specification]
 - [STAC tutorial]
+- [STAC utils] ecosystem
 ### Suggested references for COGs
 - COG format [intro] and [advanced] from Cloud Native Geospatial
 
@@ -84,6 +85,7 @@ subtitle: Non-exhaustive gathering of relevant resources.
 [STAC API Browser Plugin]: https://stacspec.org/en/tutorials/2-intro-to-stac-api-browser-qgis-plugin/
 [CHANGELOG]: https://qgis.org/project/visual-changelogs/visualchangelog340/#feature-stac-integration
 [Tutorial]: https://cogeo.org/qgis-tutorial.html
+[STAC utils]: https://github.com/stac-utils
 
 *[COG]: Cloud Optimized GeoTIFF
 *[STAC]: Spatio-Temporal Asset Catalog

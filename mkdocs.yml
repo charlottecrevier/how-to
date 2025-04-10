@@ -76,13 +76,12 @@ nav:
   - Home : index.md
   # - readme : README.md
   - How-to Guides : 
-    - Quickstart :
-      - STAC API : pystac-client.md
-    # - Interact with COGs
-      - COG : example-cogs.md
+    - STAC API : pystac-client.md
+  # - Interact with COGs
+    - COG : example-cogs.md
+    - Third Party Libraries : pystac-into-xarray.md
     # - Other : docs/index.md
-    - Additional Information :
-      - Third party libraries : pystac-into-xarray.md
-      - Known Bugs : reorder-transform-example.md
   - External References : reference.md
-  # - FAQ
+  - Additional Information :
+    - Known Bugs : reorder-transform-example.md
+      # - FAQ
