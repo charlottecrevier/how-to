@@ -65,6 +65,13 @@ Third party libraries using STAC objects :
 If you encounter any issues, please create a new issue using our template.
 </issues/new>  
 
+## License
+The examples are released under the [Open Government License - Canada](https://open.canada.ca/en/open-government-licence-canada).
+
+!!! Note
+    All the libraries and resources presented here are open-source and have their own licensing.
+    Please refer to the specific libraries documentation for licensing information.
+
 [pystac-client]: https://pystac-client.readthedocs.io/en/stable/usage.html
 [rasterio]: https://rasterio.readthedocs.io/en/latest/quickstart.html
 [stackstac]: https://stackstac.readthedocs.io/en/latest/basic.html
