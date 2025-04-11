@@ -1,5 +1,5 @@
 """
-## Load pystac items into an Xarray
+### Load pystac items into an Xarray
 
 In this code you will : 
 
@@ -66,16 +66,41 @@ items_xarray = stackstac.stack(result_items,
                           epsg = 3979,
                           properties=False)
 
+print(items_xarray)
+# >>> items_xarray 
+# <xarray.DataArray 'stackstac-a96f69db1a66a462b3fb7c84c412aa7e' (time: 1,
+#                                                                 band: 2,
+#                                                                 y: 8812, 
+#                                                                 x: 7581)> Size: 1GB
+# dask.array<fetch_raster_window, shape=(1, 2, 8812, 7581), dtype=float64, chunksize=(1, 1, 1000, 1000), chunktype=numpy.ndarray>
+# Coordinates:
+#   * time         (time) datetime64[ns] 8B 2023-05-09T12:00:00
+#     id           (time) <U13 52B '9_2-mosaic-1m'
+#   * band         (band) <U3 24B 'dsm' 'dtm'
+#   * x            (x) float64 61kB 1.843e+06 1.843e+06 ... 1.855e+06 1.855e+06
+#   * y            (y) float64 70kB -3.925e+04 -3.925e+04 ... -5.362e+04
+#     title        (band) <U27 216B 'Digital Surface Model (COG)' 'Digital Terr...
+#     description  (band) <U61 488B 'Digital Surface Model derived fromAirborne...
+#     epsg         int64 8B 3979
+# Attributes:
+#     spec:           RasterSpec(epsg=3979, bounds=(1842906.2779342758, -53625....
+#     crs:            epsg:3979
+#     transform:      | 1.63, 0.00, 1842906.28|\n| 0.00,-1.63,-39249.98|\n| 0.0...
+#     resolution_xy:  (1.6327081635433747, 1.6314054662236352)
+
 # At this point, the metadata and array shape are set, but the data itself isn't read.
 # Running .compute() allows Dask to optimize the workflow, evaluating and executing it 
 # in the most efficient way, optimizing resource usage.
 # # --8<-- [end:code]
 
 # --8<-- [start:example]
-# Example : Get the mean surface height for the an AOI
-# Perform the difference between dsm and dtm
+# Example : Get the mean surface height for the AOI
+# 1. Substract the dtm to the dsm
+# Dimension are [time, band, x, y]
 items_xarray['surface_height'] = items_xarray[:, 0, :, :] - items_xarray[:, 1, :, :]
-# To make sure you only get canopy height, use landcover to mask non-forested area
+# items_xarray[:, 0, :, :] -> Getting all the 
+# 2. Compute the calculation
 surface_height = items_xarray.surface_height.compute()
+# 3. Perform the mean
 surface_height.mean()
 # --8<-- [end:example]

@@ -79,7 +79,7 @@ nav:
     - STAC API : pystac-client.md
   # - Interact with COGs
     - COG : example-cogs.md
-    - Third Party Libraries : pystac-into-xarray.md
+    - Additionnal libraires : pystac-into-xarray.md
     # - Other : docs/index.md
   - External References : reference.md
   - Additional Information :

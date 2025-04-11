@@ -44,10 +44,23 @@ for page in search.pages():
 # At this point the data is not read in the Xarray object
 # See the Xarray object details
 print(band)
+# <xarray.DataArray (band: 1, y: 999, x: 1134)> Size: 5MB
+# dask.array<getitem, shape=(1, 999, 1134), dtype=float32, chunksize=(1, 512, 512), chunktype=numpy.ndarray>
+# Coordinates:
+#   * band         (band) int64 8B 1
+#   * x            (x) float64 9kB 1.493e+06 1.493e+06 ... 1.527e+06 1.527e+06
+#   * y            (y) float64 8kB -1.557e+05 -1.558e+05 ... -1.857e+05 -1.857e+05
+#     spatial_ref  int64 8B 0
+# Attributes:
+#     TIFFTAG_DATETIME:  2024:12:12 12:00:00
+#     AREA_OR_POINT:     Area
+#     scale_factor:      1.0
+#     add_offset:        0.0
+#     _FillValue:        -32767.0
 
-# Now, all xarray.DataArray methods are available
-print(type(band))
-# >> <class 'xarray.core.dataarray.DataArray'>
+# At this point, the metadata and array shape are set, but the data itself isn't read.
+# Running .compute() allows Dask to optimize the workflow, evaluating and executing it 
+# in the most efficient way, optimizing resource usage.
 
 # Perform analysis...
 
