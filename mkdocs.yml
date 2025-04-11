@@ -1,7 +1,8 @@
-site_name: Cloud-Optimized Geospatial Data Access 
+site_name: Cloud Optimized Geospatial Data Access 
 site_url: https://charlottecrevier.github.io/how-to/
 repo_url: https://github.com/charlottecrevier/how-to
 repo_name: charlottecrevier/how-to # To be changed when will be on NRCan
+copyright: <a href="https://open.canada.ca/en/open-government-licence-canada"> Open Government Licence - Canada</a>
 
 site_dir: public
 
@@ -48,6 +49,8 @@ plugins:
   - git-committers:
       repository: charlottecrevier/how-to
       branch: main
+      exclude_committers: 
+        - web-flow
       # token: !ENV MKDOCS_GIT_COMMITTERS_APIKEY
 
 markdown_extensions:
@@ -72,14 +75,13 @@ markdown_extensions:
 nav:
   - Home : index.md
   # - readme : README.md
-  - How-to guides : 
-    - Quickstart :
-      - Interacting with CCMEO STAC API : pystac-client.md
-    # - Interact with COGs
-      - Accessing COG data : example-cogs.md
+  - How-to Guides : 
+    - STAC API : pystac-client.md
+  # - Interact with COGs
+    - COG : example-cogs.md
+    - Additionnal libraires : pystac-into-xarray.md
     # - Other : docs/index.md
-    - Other topics :
-      - Third party libraries : pystac-into-xarray.md
-      - Re-order transform when using GDAL based libaries : reorder-transform-example.md
-  - Quick links : reference.md
-  # - FAQ
+  - External References : reference.md
+  - Additional Information :
+    - Known Bugs : reorder-transform-example.md
+      # - FAQ

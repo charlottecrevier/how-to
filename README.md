@@ -1,6 +1,5 @@
-# Cloud-Optimized Geospatial Data Access
-Non-exhaustive good practices and tutorials for Cloud Optimized data access
-for Government of Canada public COG collections. 
+# Cloud Optimized Geospatial Data Access
+Best practices and tutorials using open-source libraries for Cloud Optimized GeoTIFF (COG) access from Natural Resources Canada's Center for Mapping and Earth Observation (CCMEO) datacube.
 
 Main documentation is under the GitHub pages repository site.   
 Built with : [![Built with Material for MkDocs](https://img.shields.io/badge/Material_for_MkDocs-526CFE?style=for-the-badge&logo=MaterialForMkDocs&logoColor=white)](https://squidfunk.github.io/mkdocs-material/)
@@ -9,25 +8,35 @@ Built with : [![Built with Material for MkDocs](https://img.shields.io/badge/Mat
 STAC API : <https://datacube.services.geo.ca/stac/api/>  
 STAC API via STAC-Browser : <https://radiantearth.github.io/stac-browser/#/external/datacube.services.geo.ca/stac/api/?.language=en>
 
-## Libraries
-Non-exhaustive list of libraries used in the examples.
+## Libraries used in the examples.
 
 ### To discover data  
 
+From [Radiant Earth] : 
 - [pystac-client]
 
 ### To access data  
 
+Based on GDAL :
+
 - [rasterio]
-- [stackstac]
 - [rioxarray]
-- dask
+
+Third party libraries using STAC objects :
+
+- [stackstac]
+- [odc-stac]
 
 [pystac-client]: https://pystac-client.readthedocs.io/en/stable/usage.html
 [rasterio]: https://rasterio.readthedocs.io/en/latest/quickstart.html
 [stackstac]: https://stackstac.readthedocs.io/en/latest/basic.html
 [rioxarray]: https://corteva.github.io/rioxarray/stable/
+[odc-stac]: https://odc-stac.readthedocs.io/en/latest/intro.html
+[Radiant Earth]: https://github.com/radiantearth
 
 ## Report an Issue
 
 If you encounter any issues, please create a new issue using our templates.
+
+## License
+The examples are released under the [Open Government License - Canada](https://open.canada.ca/en/open-government-licence-canada).

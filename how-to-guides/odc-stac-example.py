@@ -1,9 +1,9 @@
 """
-## Load pystac items into an Xarray
+### Load pystac items into an Xarray
 
 In this code you will : 
 
-- Scrape the STAC using `pystac-client` to get `pystac-item` object
+- Query a STAC API with pystac-client to get a pystac-items object; 
 - Load the `pystac-item` object into a Xarray.Dataset using `odc.stac`
 
 !!! info

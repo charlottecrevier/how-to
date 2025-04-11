@@ -1,9 +1,7 @@
 """
-## Get a list of collections
+## List collections
 
-In this example you will learn how to :   
-
-- Queries the ccmeo datacube STAC API with pystac-client to get the available collection
+In this example you will learn how to query a STAC API with pystac-client to get the available collections
 """
 # --8<-- [start:code]
 # Import the library needed
