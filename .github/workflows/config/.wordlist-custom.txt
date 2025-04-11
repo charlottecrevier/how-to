@@ -13,6 +13,7 @@ changelog
 CLI
 cli
 COG
+COGs
 COG's
 cog
 cogeo
@@ -72,4 +73,5 @@ tiff
 TOC
 toc
 txt
+utils
 xarray

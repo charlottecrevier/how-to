@@ -95,7 +95,7 @@ print(items_xarray)
 
 # --8<-- [start:example]
 # Example : Get the mean surface height for the AOI
-# 1. Substract the dtm to the dsm
+# 1. Subtract the dtm to the dsm
 # Dimension are [time, band, x, y]
 items_xarray['surface_height'] = items_xarray[:, 0, :, :] - items_xarray[:, 1, :, :]
 # items_xarray[:, 0, :, :] -> Getting all the 

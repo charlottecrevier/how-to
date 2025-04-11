@@ -18,7 +18,7 @@ The following examples focus on loading COG data into xarray object backed by Da
 
 Load a single COG, using the link to the s3 object, into an xarray.
 
-Rioxarray is based on rasterio, and can be used to read data into Xarray object. The developpers of the rioxarray library provide additional usage examples, like this [one](https://corteva.github.io/rioxarray/stable/examples/read-locks.html).
+Rioxarray is based on rasterio, and can be used to read data into Xarray object. The developers of the rioxarray library provide additional usage examples, like this [one](https://corteva.github.io/rioxarray/stable/examples/read-locks.html).
 
 ``` sh
 --8<-- "how-to-guides/rioxarray-requirements.txt"
@@ -62,7 +62,7 @@ This is a third party library based on Xarray, but not listed under the Xarray d
 ``` sh
 --8<-- "how-to-guides/stackstac-requirements.txt"
 ```
-If you have problems with the installation, please refere to [stackstac installation].
+If you have problems with the installation, please refer to [stackstac installation].
 
 <!-- START: Read with stackstac-stac -->
 ::: how-to-guides.stackstac-example
@@ -83,7 +83,7 @@ This is a third party library based on Xarray, but not listed under the Xarray d
 ``` sh
 --8<-- "how-to-guides/odc-stac-requirements.txt"
 ```
-If you have problems with the installation, please refere to [odc-stac installation].
+If you have problems with the installation, please refer to [odc-stac installation].
 
 <!-- START: Read with odc-stac -->
 ::: how-to-guides.odc-stac-example

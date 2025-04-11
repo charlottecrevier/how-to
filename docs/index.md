@@ -1,7 +1,7 @@
 # Cloud Optimized Geospatial Data Access
 
 Best practices and tutorials using open-source libraries for Cloud Optimized GeoTIFF (COG) access
-from the Canada Centre for Mapping and Earth Observation (CCMEO) datacube. 
+from the Canada Center for Mapping and Earth Observation (CCMEO) datacube. 
 
 !!! info "Link to CCMEO COG collections "
     STAC API : <https://datacube.services.geo.ca/stac/api/>  
